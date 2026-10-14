@@ -1,0 +1,36 @@
+{
+  "syntheticOnly": true,
+  "pdf": "synthetic-physics-columns.pdf",
+  "questions": 2,
+  "questionPages": [
+    1,
+    1
+  ],
+  "answerPage": 2,
+  "required": [
+    {
+      "id": 1,
+      "charge": "positive",
+      "field": "inward",
+      "region": "0<x<d",
+      "radius": "R=d/2",
+      "numericValuesGiven": false
+    },
+    {
+      "id": 2,
+      "massKg": 3.2e-27,
+      "chargeC": -1.6e-19,
+      "speedMS": 200000.0,
+      "fieldT": 0.2,
+      "fieldDirection": "outward",
+      "region": "infinite"
+    }
+  ],
+  "excludeFromStems": [
+    "参考答案",
+    "最远距离为 R=d/2",
+    "不能从 x=d 穿出",
+    "0.020 m=2.0 cm",
+    "动能不变"
+  ]
+}

@@ -1,0 +1,24 @@
+import {build} from 'esbuild';
+import {readFile,writeFile,mkdir,copyFile,cp} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {mathliveFontCSS,inlineMathlivePlugin} from './mathlive-assets.mjs';
+
+execFileSync(process.execPath,['scripts/build-planar.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/build-example4.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/build-supplement.mjs'],{stdio:'inherit'});
+const out=resolve('dist/exam');await mkdir(out,{recursive:true});
+await build({entryPoints:['src/exam/app.mjs'],outfile:join(out,'app.js'),bundle:true,format:'iife',target:'chrome120',minify:true,legalComments:'inline',plugins:[inlineMathlivePlugin()]});
+await build({entryPoints:['src/exam/pdf-host.mjs'],outfile:join(out,'pdf-host.js'),bundle:true,format:'iife',target:'chrome136',minify:true});
+await copyFile('src/exam/index.html',join(out,'index.html'));
+await writeFile(join(out,'style.css'),(await readFile('src/exam/style.css','utf8'))+'\n'+(await readFile('src/exam/math-composer.css','utf8'))+'\n'+(await readFile('src/formula-editor.css','utf8'))+'\n'+(await readFile('src/exam/handwriting-formula.css','utf8')));
+const hosted='<script>if(window.parent!==window){window.__EXAM_HOST__=true;window.__EXAM_GENERATION__=new URL(location.href).searchParams.get("examSession");}</script><style>.exam-hosted>header .brand,.exam-hosted #save,.exam-hosted #load,.exam-hosted #fullscreen,.exam-hosted .lesson-entry{display:none}.exam-hosted>header{height:45px}.exam-hosted .brand-mark,.exam-hosted .brand-copy,.exam-hosted .header-note{display:none}.exam-hosted #reset-all{margin-left:auto}.exam-hosted #teaching-hud{top:auto;bottom:75px}</style>';
+await writeFile(join(out,'planar.html'),(await readFile('带电粒子平面沙盒.html','utf8')).replace('</head>',()=>hosted+'</head>'));await writeFile(join(out,'example4.html'),(await readFile('例4空间组合场演示.html','utf8')).replace('</head>',()=>hosted+'</head>'));
+await writeFile(join(out,'supplement.html'),(await readFile(join(out,'supplement.html'),'utf8')).replace('</head>',()=>hosted+'</head>'));
+await copyFile('node_modules/pdfjs-dist/build/pdf.worker.mjs',join(out,'pdf.worker.mjs'));
+await Promise.all(['cmaps','standard_fonts','wasm'].map(name=>cp('node_modules/pdfjs-dist/'+name,join(out,'pdf',name),{recursive:true})));
+let math=await readFile('node_modules/katex/dist/katex.min.css','utf8');
+for(const font of [...math.matchAll(/url\(([^)]+\.woff2)\)/g)])math=math.replaceAll(font[0],'url(data:font/woff2;base64,'+(await readFile(resolve('node_modules/katex/dist',font[1]))).toString('base64')+')');
+await writeFile(join(out,'math.css'),math+'\n'+mathliveFontCSS());
+execFileSync(process.execPath,['scripts/build-exam-sample.mjs'],{stdio:'inherit'});
+console.log('Built desktop and portable classroom workspace in dist/exam');

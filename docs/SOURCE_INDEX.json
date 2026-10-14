@@ -1,0 +1,2891 @@
+{
+  "schemaVersion": 1,
+  "productVersion": "0.7.0",
+  "scope": "public source files; excludes generated outputs, Git, runtime data and inventory files",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "area": "root",
+      "bytes": 298,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": ".gitignore",
+      "area": "root",
+      "bytes": 307,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "AGENTS.md",
+      "area": "root",
+      "bytes": 6815,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "ASSET_LICENSES.md",
+      "area": "root",
+      "bytes": 4089,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "area": "root",
+      "bytes": 1284,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "LICENSE",
+      "area": "root",
+      "bytes": 1076,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "area": "root",
+      "bytes": 2209,
+      "type": "json",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "README.md",
+      "area": "root",
+      "bytes": 8707,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "SECURITY.md",
+      "area": "root",
+      "bytes": 1756,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "area": "root",
+      "bytes": 5396,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "assets/asset-register.json",
+      "area": "teaching-assets",
+      "bytes": 18943,
+      "type": "json",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "assets/guide/rId10.png",
+      "area": "teaching-assets",
+      "bytes": 11873,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId11.png",
+      "area": "teaching-assets",
+      "bytes": 7383,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId12.png",
+      "area": "teaching-assets",
+      "bytes": 5817,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId13.png",
+      "area": "teaching-assets",
+      "bytes": 76313,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId14.png",
+      "area": "teaching-assets",
+      "bytes": 1105,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId15.png",
+      "area": "teaching-assets",
+      "bytes": 1077,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId16.png",
+      "area": "teaching-assets",
+      "bytes": 8378,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId17.png",
+      "area": "teaching-assets",
+      "bytes": 11186,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId18.png",
+      "area": "teaching-assets",
+      "bytes": 11759,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId19.png",
+      "area": "teaching-assets",
+      "bytes": 18598,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId20.png",
+      "area": "teaching-assets",
+      "bytes": 12776,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId21.png",
+      "area": "teaching-assets",
+      "bytes": 8077,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId22.png",
+      "area": "teaching-assets",
+      "bytes": 8158,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId23.png",
+      "area": "teaching-assets",
+      "bytes": 8824,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId24.png",
+      "area": "teaching-assets",
+      "bytes": 8475,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId25.png",
+      "area": "teaching-assets",
+      "bytes": 12791,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId26.png",
+      "area": "teaching-assets",
+      "bytes": 5600,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId27.png",
+      "area": "teaching-assets",
+      "bytes": 9589,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId28.png",
+      "area": "teaching-assets",
+      "bytes": 1105,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId29.png",
+      "area": "teaching-assets",
+      "bytes": 10083,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId30.png",
+      "area": "teaching-assets",
+      "bytes": 10734,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId31.png",
+      "area": "teaching-assets",
+      "bytes": 10921,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId32.png",
+      "area": "teaching-assets",
+      "bytes": 15572,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId33.png",
+      "area": "teaching-assets",
+      "bytes": 20286,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId34.png",
+      "area": "teaching-assets",
+      "bytes": 25757,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId35.png",
+      "area": "teaching-assets",
+      "bytes": 29974,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId36.png",
+      "area": "teaching-assets",
+      "bytes": 11734,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId37.png",
+      "area": "teaching-assets",
+      "bytes": 4456,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId38.png",
+      "area": "teaching-assets",
+      "bytes": 21672,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId39.png",
+      "area": "teaching-assets",
+      "bytes": 6217,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId40.png",
+      "area": "teaching-assets",
+      "bytes": 17064,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId41.png",
+      "area": "teaching-assets",
+      "bytes": 36732,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId42.png",
+      "area": "teaching-assets",
+      "bytes": 10400,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId43.png",
+      "area": "teaching-assets",
+      "bytes": 49282,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId44.png",
+      "area": "teaching-assets",
+      "bytes": 15017,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId45.png",
+      "area": "teaching-assets",
+      "bytes": 11591,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId46.png",
+      "area": "teaching-assets",
+      "bytes": 9871,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId47.png",
+      "area": "teaching-assets",
+      "bytes": 10572,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId48.png",
+      "area": "teaching-assets",
+      "bytes": 8418,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId49.png",
+      "area": "teaching-assets",
+      "bytes": 11502,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId50.png",
+      "area": "teaching-assets",
+      "bytes": 6438,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId51.png",
+      "area": "teaching-assets",
+      "bytes": 10547,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId52.png",
+      "area": "teaching-assets",
+      "bytes": 6325,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId53.png",
+      "area": "teaching-assets",
+      "bytes": 8493,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "assets/guide/rId54.png",
+      "area": "teaching-assets",
+      "bytes": 17052,
+      "type": "png",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "desktop/exam/backend.mjs",
+      "area": "desktop",
+      "bytes": 5121,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "desktop/exam/main.mjs",
+      "area": "desktop",
+      "bytes": 4424,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "desktop/exam/preload.cjs",
+      "area": "desktop",
+      "bytes": 489,
+      "type": "cjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "desktop/exam/store.mjs",
+      "area": "desktop",
+      "bytes": 6227,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "area": "docs",
+      "bytes": 10346,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "area": "docs",
+      "bytes": 14107,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/DEVELOPMENT.md",
+      "area": "docs",
+      "bytes": 12402,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/EXPORT_NOTES.md",
+      "area": "docs",
+      "bytes": 2929,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/FILE_MAP.md",
+      "area": "docs",
+      "bytes": 3708,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/USER_GUIDE.md",
+      "area": "docs",
+      "bytes": 5128,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/dependency-licenses.json",
+      "area": "docs",
+      "bytes": 38607,
+      "type": "json",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/guide/index.html",
+      "area": "docs",
+      "bytes": 45935,
+      "type": "html",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/@electron__get/LICENSE",
+      "area": "docs",
+      "bytes": 1088,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/@img__colour/LICENSE.md",
+      "area": "docs",
+      "bytes": 4433,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/@img__sharp-linux-x64/LICENSE",
+      "area": "docs",
+      "bytes": 10273,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/@napi-rs__canvas/LICENSE",
+      "area": "docs",
+      "bytes": 1075,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/@types__node/LICENSE",
+      "area": "docs",
+      "bytes": 1141,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/@types__trusted-types/LICENSE",
+      "area": "docs",
+      "bytes": 1141,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/@xmldom__xmldom/LICENSE",
+      "area": "docs",
+      "bytes": 1298,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/README.md",
+      "area": "docs",
+      "bytes": 522,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/commander/LICENSE",
+      "area": "docs",
+      "bytes": 1098,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/debug/LICENSE",
+      "area": "docs",
+      "bytes": 1139,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/detect-libc/LICENSE",
+      "area": "docs",
+      "bytes": 11357,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/dompurify/LICENSE",
+      "area": "docs",
+      "bytes": 11358,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/dompurify/LICENSE-MPL",
+      "area": "docs",
+      "bytes": 16726,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/electron/LICENSE",
+      "area": "docs",
+      "bytes": 1096,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/env-paths/license",
+      "area": "docs",
+      "bytes": 1117,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/esbuild/LICENSE.md",
+      "area": "docs",
+      "bytes": 1069,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/fflate/LICENSE",
+      "area": "docs",
+      "bytes": 1069,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/graceful-fs/LICENSE",
+      "area": "docs",
+      "bytes": 791,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/katex/LICENSE",
+      "area": "docs",
+      "bytes": 1107,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/marked/LICENSE",
+      "area": "docs",
+      "bytes": 2942,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/mathlive/LICENSE.txt",
+      "area": "docs",
+      "bytes": 1099,
+      "type": "txt",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/ms/license.md",
+      "area": "docs",
+      "bytes": 1079,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/pdfjs-dist/LICENSE",
+      "area": "docs",
+      "bytes": 10174,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/playwright-core/LICENSE",
+      "area": "docs",
+      "bytes": 11399,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/playwright-core/NOTICE",
+      "area": "docs",
+      "bytes": 254,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/playwright/LICENSE",
+      "area": "docs",
+      "bytes": 11399,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/playwright/NOTICE",
+      "area": "docs",
+      "bytes": 254,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/progress/LICENSE",
+      "area": "docs",
+      "bytes": 1098,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/semver/LICENSE",
+      "area": "docs",
+      "bytes": 765,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/sharp/LICENSE",
+      "area": "docs",
+      "bytes": 10273,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/sumchecker/LICENSE",
+      "area": "docs",
+      "bytes": 11358,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/three/LICENSE",
+      "area": "docs",
+      "bytes": 1081,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/undici-types/LICENSE",
+      "area": "docs",
+      "bytes": 1090,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/licenses/undici/LICENSE",
+      "area": "docs",
+      "bytes": 1090,
+      "type": "text",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/AI学习助手与核验.md",
+      "area": "docs",
+      "bytes": 19245,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/作业任务与评阅.md",
+      "area": "docs",
+      "bytes": 6517,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/动态几何构造.md",
+      "area": "docs",
+      "bytes": 17098,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/图形公式与手写识别.md",
+      "area": "docs",
+      "bytes": 6850,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/学生网页学习空间.md",
+      "area": "docs",
+      "bytes": 10752,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/工作台操作指南.md",
+      "area": "docs",
+      "bytes": 22966,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/师生账号与个性化.md",
+      "area": "docs",
+      "bytes": 6008,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/微信登录接入说明.md",
+      "area": "docs",
+      "bytes": 4098,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/整卷工作台.md",
+      "area": "docs",
+      "bytes": 7996,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/manuals/班级与创意工坊.md",
+      "area": "docs",
+      "bytes": 8252,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "docs/overview.svg",
+      "area": "docs",
+      "bytes": 6572,
+      "type": "svg",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "examples/README.md",
+      "area": "examples",
+      "bytes": 852,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "examples/getting-started.mjs",
+      "area": "examples",
+      "bytes": 1901,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "package-lock.json",
+      "area": "root",
+      "bytes": 53063,
+      "type": "json",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "package.json",
+      "area": "root",
+      "bytes": 3914,
+      "type": "json",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/ai-live-check.mjs",
+      "area": "scripts",
+      "bytes": 9373,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/ai-quality-check.mjs",
+      "area": "scripts",
+      "bytes": 4186,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/ai-service-live-check.mjs",
+      "area": "scripts",
+      "bytes": 3606,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build-exam-sample.mjs",
+      "area": "scripts",
+      "bytes": 589,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build-exam-web.mjs",
+      "area": "scripts",
+      "bytes": 3725,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build-exam.mjs",
+      "area": "scripts",
+      "bytes": 2918,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build-example4.mjs",
+      "area": "scripts",
+      "bytes": 1149,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build-lorentz.mjs",
+      "area": "scripts",
+      "bytes": 1174,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build-planar.mjs",
+      "area": "scripts",
+      "bytes": 1892,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build-supplement.mjs",
+      "area": "scripts",
+      "bytes": 1012,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build-textbook-sample.mjs",
+      "area": "scripts",
+      "bytes": 3408,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "area": "scripts",
+      "bytes": 1462,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/check-exam-html.mjs",
+      "area": "scripts",
+      "bytes": 9257,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/check-exam-package.mjs",
+      "area": "scripts",
+      "bytes": 8339,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/check-exam-web-package.mjs",
+      "area": "scripts",
+      "bytes": 7983,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/check-exam-web.mjs",
+      "area": "scripts",
+      "bytes": 17516,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/check-exam-workbench.mjs",
+      "area": "scripts",
+      "bytes": 10994,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/check-lorentz.mjs",
+      "area": "scripts",
+      "bytes": 7753,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/check-public-package.mjs",
+      "area": "scripts",
+      "bytes": 19300,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/check-release-notes.mjs",
+      "area": "scripts",
+      "bytes": 2243,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/extract-guide.py",
+      "area": "scripts",
+      "bytes": 3832,
+      "type": "py",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/guide-browser-check.mjs",
+      "area": "scripts",
+      "bytes": 9283,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/guide-focused-check.mjs",
+      "area": "scripts",
+      "bytes": 3922,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/mathlive-assets.mjs",
+      "area": "scripts",
+      "bytes": 1448,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/package-exam-web.mjs",
+      "area": "scripts",
+      "bytes": 5179,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/package-exam.mjs",
+      "area": "scripts",
+      "bytes": 3287,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/qa-ai-columns.mjs",
+      "area": "scripts",
+      "bytes": 5036,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/qa-ai-curriculum.mjs",
+      "area": "scripts",
+      "bytes": 2571,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/qa-ai-thinking.mjs",
+      "area": "scripts",
+      "bytes": 1845,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "scripts/release-metadata.mjs",
+      "area": "scripts",
+      "bytes": 892,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/.env.example",
+      "area": "server",
+      "bytes": 1366,
+      "type": "example",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/account-permissions.mjs",
+      "area": "server",
+      "bytes": 746,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/account-profiles.mjs",
+      "area": "server",
+      "bytes": 7447,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-agent-tools.mjs",
+      "area": "server",
+      "bytes": 12125,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-agent-worker.mjs",
+      "area": "server",
+      "bytes": 3481,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-concepts.mjs",
+      "area": "server",
+      "bytes": 6477,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-content.mjs",
+      "area": "server",
+      "bytes": 267,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-context.mjs",
+      "area": "server",
+      "bytes": 3304,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-documents.mjs",
+      "area": "server",
+      "bytes": 7423,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-docx-worker.mjs",
+      "area": "server",
+      "bytes": 697,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-docx.mjs",
+      "area": "server",
+      "bytes": 2305,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-format.mjs",
+      "area": "server",
+      "bytes": 2312,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-formula.mjs",
+      "area": "server",
+      "bytes": 5242,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-grounding.mjs",
+      "area": "server",
+      "bytes": 9396,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-harness-worker.mjs",
+      "area": "server",
+      "bytes": 295,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-harness.mjs",
+      "area": "server",
+      "bytes": 24877,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-prompts.mjs",
+      "area": "server",
+      "bytes": 6566,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-review.mjs",
+      "area": "server",
+      "bytes": 5734,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-run-events.mjs",
+      "area": "server",
+      "bytes": 1681,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-scene-changes.mjs",
+      "area": "server",
+      "bytes": 4235,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-service.mjs",
+      "area": "server",
+      "bytes": 60289,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-settings.mjs",
+      "area": "server",
+      "bytes": 11361,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-sources.mjs",
+      "area": "server",
+      "bytes": 7270,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-stream.mjs",
+      "area": "server",
+      "bytes": 3995,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/ai-validation.mjs",
+      "area": "server",
+      "bytes": 2091,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/assignments.mjs",
+      "area": "server",
+      "bytes": 43802,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/auth.mjs",
+      "area": "server",
+      "bytes": 13661,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/check-runtime.mjs",
+      "area": "server",
+      "bytes": 2259,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/config.mjs",
+      "area": "server",
+      "bytes": 1677,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/database.mjs",
+      "area": "server",
+      "bytes": 8280,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/errors.mjs",
+      "area": "server",
+      "bytes": 305,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/feedback.mjs",
+      "area": "server",
+      "bytes": 6424,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/forum.mjs",
+      "area": "server",
+      "bytes": 31430,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/groups.mjs",
+      "area": "server",
+      "bytes": 12288,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/http.mjs",
+      "area": "server",
+      "bytes": 32248,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/lock.mjs",
+      "area": "server",
+      "bytes": 1382,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/main.mjs",
+      "area": "server",
+      "bytes": 1126,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/model-network.mjs",
+      "area": "server",
+      "bytes": 8132,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/model-provider.mjs",
+      "area": "server",
+      "bytes": 11451,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/resources.mjs",
+      "area": "server",
+      "bytes": 18685,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/service.mjs",
+      "area": "server",
+      "bytes": 10551,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/setup.mjs",
+      "area": "server",
+      "bytes": 3398,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/start.cmd",
+      "area": "server",
+      "bytes": 491,
+      "type": "cmd",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/start.sh",
+      "area": "server",
+      "bytes": 327,
+      "type": "sh",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/tijing.service",
+      "area": "server",
+      "bytes": 386,
+      "type": "service",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/wechat-accounts.mjs",
+      "area": "server",
+      "bytes": 10417,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "server/exam/workshop.mjs",
+      "area": "server",
+      "bytes": 10486,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/ai-scene-preview.mjs",
+      "area": "workbench-web",
+      "bytes": 6489,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/app.mjs",
+      "area": "workbench-web",
+      "bytes": 38310,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/bridge.mjs",
+      "area": "workbench-web",
+      "bytes": 5196,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/crop-dialog.mjs",
+      "area": "workbench-web",
+      "bytes": 2390,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/documents.mjs",
+      "area": "workbench-web",
+      "bytes": 7938,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/docx-parser.mjs",
+      "area": "workbench-web",
+      "bytes": 7287,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/drafts.mjs",
+      "area": "workbench-web",
+      "bytes": 1825,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/editor-client.mjs",
+      "area": "workbench-web",
+      "bytes": 6828,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/handwriting-formula.css",
+      "area": "workbench-web",
+      "bytes": 6268,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/handwriting-formula.mjs",
+      "area": "workbench-web",
+      "bytes": 16779,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/index.html",
+      "area": "workbench-web",
+      "bytes": 8696,
+      "type": "html",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/math-composer.css",
+      "area": "workbench-web",
+      "bytes": 2845,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/math-composer.mjs",
+      "area": "workbench-web",
+      "bytes": 8202,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/mobile.mjs",
+      "area": "workbench-web",
+      "bytes": 6548,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/model.mjs",
+      "area": "workbench-web",
+      "bytes": 10968,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/paper-content.mjs",
+      "area": "workbench-web",
+      "bytes": 1638,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/pdf-browser.mjs",
+      "area": "workbench-web",
+      "bytes": 71,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/pdf-host.mjs",
+      "area": "workbench-web",
+      "bytes": 240,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/pdf.mjs",
+      "area": "workbench-web",
+      "bytes": 1836,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/release-notes.json",
+      "area": "workbench-web",
+      "bytes": 2364,
+      "type": "json",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/resources.mjs",
+      "area": "workbench-web",
+      "bytes": 4712,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/scene-question.mjs",
+      "area": "workbench-web",
+      "bytes": 4382,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/source-view.mjs",
+      "area": "workbench-web",
+      "bytes": 4393,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/style.css",
+      "area": "workbench-web",
+      "bytes": 17301,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-account-center.css",
+      "area": "workbench-web",
+      "bytes": 14216,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-account-center.mjs",
+      "area": "workbench-web",
+      "bytes": 20496,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ai-activity.mjs",
+      "area": "workbench-web",
+      "bytes": 16392,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ai-agent.css",
+      "area": "workbench-web",
+      "bytes": 18845,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ai-dock.css",
+      "area": "workbench-web",
+      "bytes": 13807,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ai-dock.mjs",
+      "area": "workbench-web",
+      "bytes": 11152,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ai-settings.css",
+      "area": "workbench-web",
+      "bytes": 5369,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ai-settings.mjs",
+      "area": "workbench-web",
+      "bytes": 15741,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ai.css",
+      "area": "workbench-web",
+      "bytes": 30478,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ai.mjs",
+      "area": "workbench-web",
+      "bytes": 64783,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-assignments.css",
+      "area": "workbench-web",
+      "bytes": 10323,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-assignments.mjs",
+      "area": "workbench-web",
+      "bytes": 33473,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-button-icons.css",
+      "area": "workbench-web",
+      "bytes": 4417,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-community.css",
+      "area": "workbench-web",
+      "bytes": 26040,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-design.css",
+      "area": "workbench-web",
+      "bytes": 20544,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-domains.css",
+      "area": "workbench-web",
+      "bytes": 17985,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-feedback.mjs",
+      "area": "workbench-web",
+      "bytes": 8210,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-forum.mjs",
+      "area": "workbench-web",
+      "bytes": 33434,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-groups.mjs",
+      "area": "workbench-web",
+      "bytes": 12807,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-header.mjs",
+      "area": "workbench-web",
+      "bytes": 3296,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-host.mjs",
+      "area": "workbench-web",
+      "bytes": 54778,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-ui.mjs",
+      "area": "workbench-web",
+      "bytes": 5399,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-updates.css",
+      "area": "workbench-web",
+      "bytes": 3995,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-updates.mjs",
+      "area": "workbench-web",
+      "bytes": 2831,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web-workshop.mjs",
+      "area": "workbench-web",
+      "bytes": 11859,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/web.css",
+      "area": "workbench-web",
+      "bytes": 17565,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/workspace-chrome.css",
+      "area": "workbench-web",
+      "bytes": 13872,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/exam/workspace-chrome.mjs",
+      "area": "workbench-web",
+      "bytes": 32545,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/example4/app.mjs",
+      "area": "spatial-model",
+      "bytes": 11778,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/example4/physics.mjs",
+      "area": "spatial-model",
+      "bytes": 2861,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/example4/scene.mjs",
+      "area": "spatial-model",
+      "bytes": 12850,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/example4/style.css",
+      "area": "spatial-model",
+      "bytes": 13394,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/example4/template.html",
+      "area": "spatial-model",
+      "bytes": 6192,
+      "type": "html",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/formula-conversion.mjs",
+      "area": "src",
+      "bytes": 12200,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/formula-editor.css",
+      "area": "src",
+      "bytes": 6181,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/formula-editor.mjs",
+      "area": "src",
+      "bytes": 13538,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/guide-app.mjs",
+      "area": "ampere-legacy",
+      "bytes": 28137,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/guide-curriculum.mjs",
+      "area": "ampere-legacy",
+      "bytes": 20891,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/guide-math.mjs",
+      "area": "ampere-legacy",
+      "bytes": 3623,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/guide-physics.mjs",
+      "area": "ampere-legacy",
+      "bytes": 16591,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/guide-scene.mjs",
+      "area": "ampere-legacy",
+      "bytes": 37168,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/guide-source.json",
+      "area": "ampere-legacy",
+      "bytes": 917673,
+      "type": "json",
+      "readHint": "select JSON fields; embedded image payloads"
+    },
+    {
+      "path": "src/guide-state.mjs",
+      "area": "ampere-legacy",
+      "bytes": 2679,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/guide-style.css",
+      "area": "ampere-legacy",
+      "bytes": 19489,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/guide-template.html",
+      "area": "ampere-legacy",
+      "bytes": 8061,
+      "type": "html",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/lorentz-app.mjs",
+      "area": "lorentz-legacy",
+      "bytes": 31253,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/lorentz-math.mjs",
+      "area": "lorentz-legacy",
+      "bytes": 681,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/lorentz-physics.mjs",
+      "area": "lorentz-legacy",
+      "bytes": 9508,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/lorentz-presets.mjs",
+      "area": "lorentz-legacy",
+      "bytes": 3084,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/lorentz-scene.mjs",
+      "area": "lorentz-legacy",
+      "bytes": 26141,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/lorentz-style.css",
+      "area": "lorentz-legacy",
+      "bytes": 15063,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/lorentz-template.html",
+      "area": "lorentz-legacy",
+      "bytes": 5435,
+      "type": "html",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-algebra-panel.css",
+      "area": "planar-sandbox",
+      "bytes": 4271,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-algebra-panel.mjs",
+      "area": "planar-sandbox",
+      "bytes": 14909,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-app.mjs",
+      "area": "planar-sandbox",
+      "bytes": 126300,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-construction-formula.mjs",
+      "area": "planar-sandbox",
+      "bytes": 4451,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-construction-ui.css",
+      "area": "planar-sandbox",
+      "bytes": 7941,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-construction-ui.mjs",
+      "area": "planar-sandbox",
+      "bytes": 21752,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-constructions.mjs",
+      "area": "planar-sandbox",
+      "bytes": 19417,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-context-menu.css",
+      "area": "planar-sandbox",
+      "bytes": 5292,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-context-menu.mjs",
+      "area": "planar-sandbox",
+      "bytes": 8796,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-dependencies.mjs",
+      "area": "planar-sandbox",
+      "bytes": 4249,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-dependency-graph.css",
+      "area": "planar-sandbox",
+      "bytes": 6462,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-dependency-graph.mjs",
+      "area": "planar-sandbox",
+      "bytes": 12864,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-example-catalog.mjs",
+      "area": "planar-sandbox",
+      "bytes": 4804,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-example-gallery.css",
+      "area": "planar-sandbox",
+      "bytes": 6036,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-example-gallery.mjs",
+      "area": "planar-sandbox",
+      "bytes": 9980,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-expressions.mjs",
+      "area": "planar-sandbox",
+      "bytes": 9866,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-field-display.mjs",
+      "area": "planar-sandbox",
+      "bytes": 10972,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-field-probe.css",
+      "area": "planar-sandbox",
+      "bytes": 2386,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-field-probe.mjs",
+      "area": "planar-sandbox",
+      "bytes": 6664,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-formula-references.mjs",
+      "area": "planar-sandbox",
+      "bytes": 1972,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-geometry.mjs",
+      "area": "planar-sandbox",
+      "bytes": 17426,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-help-content.mjs",
+      "area": "planar-sandbox",
+      "bytes": 6291,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-lessons.mjs",
+      "area": "planar-sandbox",
+      "bytes": 13539,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-measurements.mjs",
+      "area": "planar-sandbox",
+      "bytes": 2792,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-model.mjs",
+      "area": "planar-sandbox",
+      "bytes": 25020,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-motion-plot.css",
+      "area": "planar-sandbox",
+      "bytes": 3398,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-motion-plot.mjs",
+      "area": "planar-sandbox",
+      "bytes": 15317,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-motion-readings.mjs",
+      "area": "planar-sandbox",
+      "bytes": 4448,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-motion-series.mjs",
+      "area": "planar-sandbox",
+      "bytes": 6567,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-object-copy.mjs",
+      "area": "planar-sandbox",
+      "bytes": 2755,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-object-style-dialog.css",
+      "area": "planar-sandbox",
+      "bytes": 3064,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-object-style-dialog.mjs",
+      "area": "planar-sandbox",
+      "bytes": 7640,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-object-style.mjs",
+      "area": "planar-sandbox",
+      "bytes": 2651,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-parameter-board.css",
+      "area": "planar-sandbox",
+      "bytes": 2846,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-parameter-board.mjs",
+      "area": "planar-sandbox",
+      "bytes": 4257,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-parameter-playback.css",
+      "area": "planar-sandbox",
+      "bytes": 3476,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-parameter-playback.mjs",
+      "area": "planar-sandbox",
+      "bytes": 11722,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-parameter-slider-dialog.css",
+      "area": "planar-sandbox",
+      "bytes": 2453,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-parameter-slider-dialog.mjs",
+      "area": "planar-sandbox",
+      "bytes": 4372,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-parameter-slider.mjs",
+      "area": "planar-sandbox",
+      "bytes": 2228,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-physics.mjs",
+      "area": "planar-sandbox",
+      "bytes": 22003,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-polygon-editor.css",
+      "area": "planar-sandbox",
+      "bytes": 2930,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-polygon-editor.mjs",
+      "area": "planar-sandbox",
+      "bytes": 7840,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-relations-ui.mjs",
+      "area": "planar-sandbox",
+      "bytes": 17620,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-relations.mjs",
+      "area": "planar-sandbox",
+      "bytes": 41873,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-scene-inspector.mjs",
+      "area": "planar-sandbox",
+      "bytes": 6980,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-style.css",
+      "area": "planar-sandbox",
+      "bytes": 30920,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-teaching-ui.mjs",
+      "area": "planar-sandbox",
+      "bytes": 7350,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-teaching.mjs",
+      "area": "planar-sandbox",
+      "bytes": 5713,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-template.html",
+      "area": "planar-sandbox",
+      "bytes": 8122,
+      "type": "html",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-timeline-bookmarks.css",
+      "area": "planar-sandbox",
+      "bytes": 3228,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-timeline-bookmarks.mjs",
+      "area": "planar-sandbox",
+      "bytes": 9700,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-timeline-events.mjs",
+      "area": "planar-sandbox",
+      "bytes": 15075,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-timeline-navigation.mjs",
+      "area": "planar-sandbox",
+      "bytes": 1873,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-timeline.css",
+      "area": "planar-sandbox",
+      "bytes": 14457,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-timeline.mjs",
+      "area": "planar-sandbox",
+      "bytes": 27017,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-trails.mjs",
+      "area": "planar-sandbox",
+      "bytes": 1100,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-view.mjs",
+      "area": "planar-sandbox",
+      "bytes": 32104,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-workspace-layout.css",
+      "area": "planar-sandbox",
+      "bytes": 6326,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/planar-workspace-layout.mjs",
+      "area": "planar-sandbox",
+      "bytes": 14630,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/supplement/app.mjs",
+      "area": "supplement-model",
+      "bytes": 9428,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/supplement/catalog.mjs",
+      "area": "supplement-model",
+      "bytes": 22416,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/supplement/models.mjs",
+      "area": "supplement-model",
+      "bytes": 40570,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/supplement/physics.mjs",
+      "area": "supplement-model",
+      "bytes": 7523,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/supplement/scene.mjs",
+      "area": "supplement-model",
+      "bytes": 8244,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/supplement/style.css",
+      "area": "supplement-model",
+      "bytes": 5703,
+      "type": "css",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "src/supplement/template.html",
+      "area": "supplement-model",
+      "bytes": 2458,
+      "type": "html",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/README.md",
+      "area": "teaching",
+      "bytes": 1306,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/README.md",
+      "area": "teaching",
+      "bytes": 4986,
+      "type": "md",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/answers.mjs",
+      "area": "teaching",
+      "bytes": 7320,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/build.mjs",
+      "area": "teaching",
+      "bytes": 7800,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/extract.mjs",
+      "area": "teaching",
+      "bytes": 1983,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/image-sizes.py",
+      "area": "teaching",
+      "bytes": 3622,
+      "type": "py",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/native-scenes.mjs",
+      "area": "teaching",
+      "bytes": 51901,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/pair-sources.mjs",
+      "area": "teaching",
+      "bytes": 4707,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/supplement-answers.mjs",
+      "area": "teaching",
+      "bytes": 2813,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/supplement-scenes.mjs",
+      "area": "teaching",
+      "bytes": 624,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/verify-native.mjs",
+      "area": "teaching",
+      "bytes": 5244,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "teaching/holiday-20261006/verify-supplement.mjs",
+      "area": "teaching",
+      "bytes": 4100,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-account-system.test.mjs",
+      "area": "tests",
+      "bytes": 9427,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-agent.test.mjs",
+      "area": "tests",
+      "bytes": 6071,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-content.test.mjs",
+      "area": "tests",
+      "bytes": 11013,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-docx.test.mjs",
+      "area": "tests",
+      "bytes": 3140,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-formula.test.mjs",
+      "area": "tests",
+      "bytes": 2932,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-geometry.test.mjs",
+      "area": "tests",
+      "bytes": 5405,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-grounding.test.mjs",
+      "area": "tests",
+      "bytes": 5195,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-harness-readings.test.mjs",
+      "area": "tests",
+      "bytes": 2997,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-inspection-ui.test.mjs",
+      "area": "tests",
+      "bytes": 3672,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-inspector.test.mjs",
+      "area": "tests",
+      "bytes": 8392,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-integration.test.mjs",
+      "area": "tests",
+      "bytes": 10358,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-settings.test.mjs",
+      "area": "tests",
+      "bytes": 7613,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-side.test.mjs",
+      "area": "tests",
+      "bytes": 4401,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-source.test.mjs",
+      "area": "tests",
+      "bytes": 5829,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai-stream.test.mjs",
+      "area": "tests",
+      "bytes": 11908,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-ai.test.mjs",
+      "area": "tests",
+      "bytes": 66909,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-assignments.test.mjs",
+      "area": "tests",
+      "bytes": 40661,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-community.test.mjs",
+      "area": "tests",
+      "bytes": 24044,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-editor-host.test.mjs",
+      "area": "tests",
+      "bytes": 2840,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-editor-toolbar.test.mjs",
+      "area": "tests",
+      "bytes": 8850,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-forum.test.mjs",
+      "area": "tests",
+      "bytes": 14423,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-omml.test.mjs",
+      "area": "tests",
+      "bytes": 3289,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-scene-question.test.mjs",
+      "area": "tests",
+      "bytes": 2637,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-static.test.mjs",
+      "area": "tests",
+      "bytes": 4007,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-updates.test.mjs",
+      "area": "tests",
+      "bytes": 1458,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-web.test.mjs",
+      "area": "tests",
+      "bytes": 17846,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-wechat-accounts.test.mjs",
+      "area": "tests",
+      "bytes": 4772,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/exam-workbench.test.mjs",
+      "area": "tests",
+      "bytes": 7554,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/example4-spatial.test.mjs",
+      "area": "tests",
+      "bytes": 2001,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/fixtures/ai-curriculum.json",
+      "area": "tests",
+      "bytes": 4350,
+      "type": "json",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/fixtures/synthetic-physics-columns-expected.json",
+      "area": "tests",
+      "bytes": 667,
+      "type": "json",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/fixtures/synthetic-physics-columns.pdf",
+      "area": "tests",
+      "bytes": 43248,
+      "type": "pdf",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "tests/fixtures/synthetic-physics-scan.pdf",
+      "area": "tests",
+      "bytes": 37650,
+      "type": "pdf",
+      "readHint": "binary asset; inspect only when needed"
+    },
+    {
+      "path": "tests/formula-conversion.test.mjs",
+      "area": "tests",
+      "bytes": 8910,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/guide-math-state.test.mjs",
+      "area": "tests",
+      "bytes": 2399,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/guide-physics.test.mjs",
+      "area": "tests",
+      "bytes": 5694,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/lorentz-physics.test.mjs",
+      "area": "tests",
+      "bytes": 3988,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-ac.test.mjs",
+      "area": "tests",
+      "bytes": 8285,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-angle-compass.test.mjs",
+      "area": "tests",
+      "bytes": 6478,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-annulus-ui.test.mjs",
+      "area": "tests",
+      "bytes": 3423,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-annulus.test.mjs",
+      "area": "tests",
+      "bytes": 9360,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-direct-constraints.test.mjs",
+      "area": "tests",
+      "bytes": 6990,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-em.test.mjs",
+      "area": "tests",
+      "bytes": 11092,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-field-display.test.mjs",
+      "area": "tests",
+      "bytes": 8836,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-geometry-teaching-examples.test.mjs",
+      "area": "tests",
+      "bytes": 5906,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-geometry.test.mjs",
+      "area": "tests",
+      "bytes": 22368,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-measurements.test.mjs",
+      "area": "tests",
+      "bytes": 3489,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-motion-readings.test.mjs",
+      "area": "tests",
+      "bytes": 5638,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-motion-series.test.mjs",
+      "area": "tests",
+      "bytes": 6674,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-object-copy.test.mjs",
+      "area": "tests",
+      "bytes": 3137,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-object-style.test.mjs",
+      "area": "tests",
+      "bytes": 1424,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-parameter-playback.test.mjs",
+      "area": "tests",
+      "bytes": 1617,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-parameter-slider.test.mjs",
+      "area": "tests",
+      "bytes": 5049,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-physics.test.mjs",
+      "area": "tests",
+      "bytes": 5430,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-redefine.test.mjs",
+      "area": "tests",
+      "bytes": 11436,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-relations.test.mjs",
+      "area": "tests",
+      "bytes": 7645,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-style-render.test.mjs",
+      "area": "tests",
+      "bytes": 5183,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-teaching.test.mjs",
+      "area": "tests",
+      "bytes": 6888,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-timeline-navigation.test.mjs",
+      "area": "tests",
+      "bytes": 5224,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-topology.test.mjs",
+      "area": "tests",
+      "bytes": 6308,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-transform.test.mjs",
+      "area": "tests",
+      "bytes": 7286,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/planar-velocity-events.test.mjs",
+      "area": "tests",
+      "bytes": 6254,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    },
+    {
+      "path": "tests/supplement-physics.test.mjs",
+      "area": "tests",
+      "bytes": 5255,
+      "type": "mjs",
+      "readHint": "source/documentation"
+    }
+  ]
+}

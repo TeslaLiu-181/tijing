@@ -1,0 +1,23 @@
+import {chromium} from 'playwright';
+import {pathToFileURL} from 'node:url';
+import {resolve} from 'node:path';
+import {readFileSync,writeFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const context=await browser.newContext({viewport:{width:1536,height:1000},offline:true});
+const page=await context.newPage(),errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
+const url=pathToFileURL(resolve('安培力三维实验室.html')).href;await page.goto(url);await page.waitForFunction(()=>window.guide?.snapshot().webgl);
+await page.locator('[data-topic="example-2"]').click();await page.locator('#parameter-panel').evaluate(el=>el.open=true);assert.equal(await page.locator('#parameters').isVisible(),false);
+await page.locator('[data-topic="exercise-3"]').click();assert.ok((await page.locator('#three-labels').textContent()).includes('场源待判断'));await page.locator('#reveal-next').click();assert.ok(!(await page.locator('#three-labels').textContent()).includes('场源待判断'));
+await page.locator('[data-topic="exercise-4"]').click();await page.locator('#reveal-next').click();await page.locator('#reveal-next').click();assert.ok((await page.evaluate(()=>window.guide.snapshot())).audit.scaleShift<0);await page.screenshot({path:'.qa/guide-scale-revealed.png',fullPage:true});
+await page.locator('[data-mode="explore"]').click();await page.locator('#reverse-current').click();assert.ok((await page.evaluate(()=>window.guide.snapshot())).audit.scaleShift>0);
+await page.locator('[data-topic="example-4"]').click();await page.locator('#parameter-angle').fill('35');await page.locator('#parameter-angle').press('Tab');assert.ok(Math.abs((await page.evaluate(()=>window.guide.snapshot())).audit.batteries[0].center[2])>.1);await page.screenshot({path:'.qa/guide-solenoid-rotated.png',fullPage:true});
+await page.locator('[data-topic="exercise-9"]').click();await page.locator('[data-paper="measure"]').click();await page.locator('#plot').scrollIntoViewIfNeeded();
+for(const type of ['a','v','f']){await page.locator(`[data-plot="${type}"]`).click();await page.locator('#plot').screenshot({path:`.qa/guide-plot-${type}.png`});}
+assert.deepEqual(await page.evaluate(()=>window.guide.snapshot().mathErrors),[]);
+await page.locator('[data-topic="horseshoe"]').click();await page.locator('#parameter-B').fill('0');await page.locator('#parameter-B').press('Tab');await page.locator('#play-trend').click();assert.equal((await page.evaluate(()=>window.guide.snapshot())).playing,false);
+await page.locator('[data-topic="equivalent"]').click();const originalGap=(await page.evaluate(()=>window.guide.snapshot())).params.gap;await page.locator('#play-trend').click();await page.waitForFunction(value=>window.guide.snapshot().params.gap<value,originalGap);await page.locator('#play-trend').click();
+const fresh=await browser.newContext({viewport:{width:1366,height:768},offline:true});const reload=await fresh.newPage();await reload.goto(url);await reload.waitForFunction(()=>window.guide?.snapshot().webgl);await reload.locator('#state-file').setInputFiles(resolve('.qa/saved-classroom.json'));await reload.waitForFunction(()=>window.guide.snapshot().topic==='example-1');
+const restored=await reload.evaluate(()=>window.guide.snapshot());assert.equal(restored.params.B,1.4);assert.equal(restored.mode,'explore');assert.equal(restored.reveal,0);assert.equal(restored.hand,null);assert.deepEqual(restored.mathErrors,[]);
+assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);writeFileSync('.qa/final-review.json',JSON.stringify({passed:true,errors,requests,freshContextRestore:true,plots:['a','v','f'],answerHidden:true,scaleMotion:true,solenoidAssembly:true},null,2));
+await browser.close();console.log('Final focused checks passed.');

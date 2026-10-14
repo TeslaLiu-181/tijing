@@ -1,0 +1,59 @@
+{
+  "name": "tijing",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:web",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/guide-browser-check.mjs",
+    "build:lorentz": "node scripts/build-lorentz.mjs",
+    "test:lorentz": "node --test tests/lorentz-physics.test.mjs",
+    "check:lorentz": "node scripts/check-lorentz.mjs",
+    "build:planar": "node scripts/build-planar.mjs",
+    "build:example4": "node scripts/build-example4.mjs",
+    "build:exam": "node scripts/build-exam.mjs",
+    "build:web": "node scripts/build-exam-web.mjs",
+    "start:web": "node --env-file-if-exists=.env server/exam/main.mjs",
+    "setup:web": "node --env-file-if-exists=.env server/exam/setup.mjs",
+    "test:web": "node --test tests/exam-web.test.mjs tests/exam-community.test.mjs tests/exam-assignments.test.mjs tests/exam-ai-settings.test.mjs tests/exam-ai.test.mjs tests/exam-ai-agent.test.mjs tests/exam-ai-source.test.mjs tests/exam-ai-side.test.mjs tests/exam-ai-harness-readings.test.mjs tests/exam-ai-inspector.test.mjs tests/exam-ai-inspection-ui.test.mjs tests/exam-editor-host.test.mjs tests/exam-editor-toolbar.test.mjs tests/exam-scene-question.test.mjs tests/exam-ai-stream.test.mjs tests/exam-ai-formula.test.mjs tests/exam-ai-geometry.test.mjs tests/exam-ai-grounding.test.mjs tests/exam-ai-docx.test.mjs tests/exam-ai-content.test.mjs tests/exam-ai-integration.test.mjs tests/exam-static.test.mjs",
+    "check:web": "node scripts/check-exam-web.mjs",
+    "package:web": "node scripts/package-exam-web.mjs",
+    "build:exam-sample": "node scripts/build-exam-sample.mjs",
+    "package:exam": "node scripts/package-exam.mjs",
+    "start:exam": "electron desktop/exam/main.mjs",
+    "test:exam": "node --test tests/exam-workbench.test.mjs tests/exam-omml.test.mjs",
+    "check:exam": "node scripts/check-exam-workbench.mjs",
+    "check:exam-html": "node scripts/check-exam-html.mjs",
+    "test:example4": "node --test tests/example4-spatial.test.mjs",
+    "test:planar": "node --test tests/planar-physics.test.mjs tests/planar-relations.test.mjs tests/planar-geometry.test.mjs tests/planar-direct-constraints.test.mjs tests/planar-angle-compass.test.mjs tests/planar-annulus.test.mjs tests/planar-annulus-ui.test.mjs tests/planar-geometry-teaching-examples.test.mjs tests/planar-redefine.test.mjs tests/planar-topology.test.mjs tests/planar-transform.test.mjs tests/planar-measurements.test.mjs tests/planar-object-copy.test.mjs tests/planar-object-style.test.mjs tests/planar-style-render.test.mjs tests/planar-field-display.test.mjs tests/planar-motion-readings.test.mjs tests/planar-velocity-events.test.mjs tests/planar-timeline-navigation.test.mjs tests/planar-motion-series.test.mjs tests/planar-parameter-slider.test.mjs tests/planar-parameter-playback.test.mjs tests/planar-em.test.mjs tests/planar-ac.test.mjs tests/planar-teaching.test.mjs tests/formula-conversion.test.mjs",
+    "build:ampere": "node scripts/build.mjs",
+    "build:sample": "node scripts/build-exam-sample.mjs",
+    "build:textbook-sample": "node scripts/build-textbook-sample.mjs",
+    "setup": "node --env-file-if-exists=.env server/exam/setup.mjs",
+    "start": "node --env-file-if-exists=.env server/exam/main.mjs",
+    "check:runtime": "node server/exam/check-runtime.mjs",
+    "check:public": "node scripts/check-public-package.mjs"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "0.9.12",
+    "dompurify": "3.4.15",
+    "fflate": "0.8.3",
+    "katex": "0.16.22",
+    "marked": "18.0.13",
+    "mathlive": "0.111.0",
+    "pdfjs-dist": "6.3.289",
+    "sharp": "0.35.4",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "electron": "44.4.2",
+    "esbuild": "0.25.9",
+    "playwright": "1.58.2"
+  },
+  "description": "题景：面向物理教学的全栈可视化学习空间",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.14 <25"
+  }
+}

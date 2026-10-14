@@ -1,0 +1,23 @@
+/* SVG masks follow text color; labels remain native button text. */
+.web .ui-icon-button{display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.ui-icon-button::before{content:"";display:block;flex:0 0 var(--ui-icon-size,18px);width:var(--ui-icon-size,18px);height:var(--ui-icon-size,18px);background:currentColor;-webkit-mask:var(--ui-button-icon) center/contain no-repeat;mask:var(--ui-button-icon) center/contain no-repeat;pointer-events:none}
+.web #web-account.ui-icon-button{flex-direction:row;align-items:center;justify-content:flex-start}
+.web .brand-icon.ui-icon-button{--ui-icon-size:21px;display:grid;place-items:center}
+.web .app-header .web-user-menu button.ui-icon-button,.header-overflow-menu button.ui-icon-button{justify-content:flex-start}
+.header-overflow{position:relative;flex:none}
+.header-overflow>summary{display:flex;align-items:center;gap:6px;list-style:none;cursor:pointer;border:1px solid #dce7e5;border-radius:9px;min-height:40px;padding:8px 10px;color:#315f64;background:#f4f8f6;font-size:12px;white-space:nowrap}
+.header-overflow>summary::-webkit-details-marker{display:none}
+.header-overflow[open]>summary{background:#e8f3ed;border-color:#bdd7cb}
+.header-overflow-menu{position:absolute;right:0;top:calc(100% + 9px);z-index:80;min-width:218px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 84px);overflow:auto;padding:7px;background:#fff;border:1px solid #d6e4de;border-radius:12px;box-shadow:0 14px 35px #244b5826}
+.header-overflow-menu>button{width:100%;min-height:40px!important;padding:9px 12px!important;text-align:left;border-radius:7px;font-size:13px!important}
+.header-overflow[hidden],.header-overflow-menu [hidden]{display:none!important}
+.web.workspace-comfortable>.app-header{height:76px;min-height:76px;padding:0 24px;gap:12px;z-index:60;position:relative;box-shadow:0 1px 8px #254b4c05}
+.web.workspace-comfortable .brand-icon{height:42px;width:42px;min-height:42px;border-radius:12px}
+.web.workspace-comfortable .brand strong{font-size:18px;font-weight:600}
+.web.workspace-comfortable .header-actions{align-items:center;gap:6px}
+.web.workspace-comfortable .header-actions>button,.web.workspace-comfortable .web-toolbar>button{min-height:42px;padding:9px 11px;font-size:13px;border-radius:9px}
+.web.workspace-comfortable .web-toolbar{align-items:center;gap:6px;padding-left:14px;margin-left:8px}
+.web.workspace-comfortable #web-notifications{padding:0;width:40px;min-width:40px;min-height:40px}
+@media(max-width:1250px){.web.workspace-comfortable>.app-header{padding-inline:16px;gap:9px}.web.workspace-comfortable .header-actions>button,.web.workspace-comfortable .web-toolbar>button{padding-inline:8px;font-size:12px}.web.workspace-comfortable .web-toolbar{gap:4px;padding-left:9px;margin-left:3px}}
+@media(max-width:1100px){.web.workspace-comfortable>.app-header{height:68px;min-height:68px;flex-wrap:nowrap}.web.workspace-comfortable .brand{flex:1;min-width:0;max-width:none}.web.workspace-comfortable .header-actions{width:auto;flex:none;flex-wrap:nowrap;margin-left:auto}.web.workspace-comfortable .web-toolbar{border:0;padding-left:3px;margin-left:0}.web.workspace-comfortable .brand strong{font-size:16px}}
+@media(max-width:560px){.web.workspace-comfortable>.app-header{height:64px;min-height:64px;padding:7px 10px;gap:6px}.web.workspace-comfortable .brand-icon{width:34px;height:36px;min-height:36px;flex:none;--ui-icon-size:19px}.web.workspace-comfortable .brand{min-width:0;flex:1;gap:2px}.web.workspace-comfortable .brand span{font-size:9px;letter-spacing:0}.web.workspace-comfortable .brand strong{font-size:14px}.web.workspace-comfortable .header-actions{gap:3px;max-width:calc(100% - 86px)}.web.workspace-comfortable .web-toolbar{gap:3px;padding:0}.web.workspace-comfortable .web-toolbar>button{min-height:36px;padding:5px;font-size:11px}.web.workspace-comfortable #web-ai-current{font-size:11px;gap:4px;--ui-icon-size:16px;padding-inline:6px}.web.workspace-comfortable #web-notifications{width:32px;min-width:32px;min-height:36px}.web.workspace-comfortable #web-user-name{max-width:42px;font-size:11px}.web.workspace-comfortable .web-user-menu>summary{gap:3px;padding-inline:3px}.web.workspace-comfortable .user-avatar{width:26px;height:26px}.web.workspace-comfortable .header-overflow>summary{min-height:36px;width:34px;padding:7px;font-size:0;gap:0;--ui-icon-size:18px}.header-overflow-menu{right:0;max-height:calc(100dvh - 78px)}}

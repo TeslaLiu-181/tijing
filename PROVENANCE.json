@@ -1,0 +1,62 @@
+{
+  "product": "题景 Tijing",
+  "productVersion": "0.7.0",
+  "distributionRevision": "open-source.1",
+  "exportedOn": "2026-10-14",
+  "upstream": {
+    "tag": "web-v0.7.0",
+    "commit": "e98b3f2395d91f90a224235ff840998cb13e8f1b",
+    "workingTreeClean": true,
+    "runtimeManifestFiles": 262,
+    "runtimeManifestMismatches": 0,
+    "unchangedTrackedFilesRetained": 331,
+    "modifiedTrackedFiles": [
+      ".gitattributes",
+      ".gitignore",
+      "README.md",
+      "package-lock.json",
+      "package.json",
+      "scripts/build-exam-sample.mjs",
+      "scripts/build-exam.mjs",
+      "scripts/extract-guide.py",
+      "scripts/package-exam-web.mjs",
+      "scripts/package-exam.mjs",
+      "src/exam/web-host.mjs",
+      "teaching/holiday-20261006/build.mjs",
+      "teaching/holiday-20261006/extract.mjs",
+      "teaching/holiday-20261006/image-sizes.py"
+    ]
+  },
+  "upstreamSnapshotArchiveSha256": "7a629aab3587432cceac6aef285054c17cc4000a3fc5712c1ef1e9de9a9b5d2f",
+  "sourceHistoryIncluded": false,
+  "runtimeDataIncluded": false,
+  "dependencyVersionsChanged": false,
+  "codeLicense": "MIT",
+  "teachingMaterials": {
+    "retained": true,
+    "redistributionAuthorization": "confirmed by maintainer on 2026-10-14",
+    "attributionComplete": false,
+    "register": "assets/asset-register.json"
+  },
+  "packagingChanges": [
+    "Unified package name/version and desktop release metadata",
+    "Added public documentation, MIT license and separate material/dependency registers",
+    "Added original attachment-free onboarding example and automatic generation",
+    "Parameterised personal teaching-material source directories",
+    "Made source startup and setup explicitly load root .env",
+    "Excluded generated artifacts, runtime data and historical private deployment records",
+    "Initialized independent local Git history without private upstream history"
+  ],
+  "excluded": [
+    ".git (upstream history)",
+    "node_modules/",
+    "dist/",
+    ".qa/",
+    "data/",
+    "production .env and external secret configuration",
+    "databases and user uploads",
+    "historical generated root HTML",
+    "docs/grill/",
+    "private deployment, infrastructure and old delivery records"
+  ]
+}

@@ -1,0 +1,19 @@
+/* Formula helpers enhance the saved Markdown without changing its contents. */
+.math-composer-tools{margin:8px 0 0;border:1px solid #dce7e7;border-bottom:0;border-radius:11px 11px 0 0;background:#f5f9f9;color:#365b62}
+.math-composer-toolbar{display:flex;gap:8px;align-items:center;padding:5px 8px;flex-wrap:wrap}
+.math-composer-toolbar button,.math-template-list button{font:inherit;font-size:12px;min-height:34px;border:1px solid transparent;border-radius:7px;background:transparent;padding:6px 9px;color:#37666b;cursor:pointer}
+.math-tools-toggle>span{font:italic 20px Georgia;margin-right:3px}.math-composer-toolbar button:hover,.math-template-list button:hover{background:#e5f0ef;border-color:#cfe2df}
+.math-composer-toolbar button[aria-pressed=true],.math-tools-toggle[aria-expanded=true]{background:#e4f1ed;color:#17675f}
+.math-composer-toolbar button:focus-visible,.math-template-list button:focus-visible{outline:2px solid #267f77;outline-offset:2px}
+.math-composer-status{font-size:11px!important;line-height:1.6!important;color:#76908f!important;flex:1;min-width:100px;overflow-wrap:anywhere}
+.math-template-list{display:flex;gap:5px;flex-wrap:wrap;padding:0 8px 8px}
+.math-template-list button{background:white;border-color:#dde7e6;font-size:11px;min-height:34px}
+textarea.math-composer-input{margin-top:0!important;border-radius:0 0 10px 10px!important}
+.math-composer-preview{border:1px solid #d5e4e1;border-radius:11px;padding:16px 20px;background:#fff;margin:12px 0;min-height:76px;overflow-wrap:anywhere;overflow:auto;max-height:380px;font-size:14px;line-height:1.9}
+.math-composer-preview p:first-child{margin-top:0}.math-composer-preview p:last-child{margin-bottom:0}
+.math-composer-preview .katex-display{overflow:auto hidden;padding:5px 0;max-width:100%}.math-preview-empty{color:#8ca09e;font-size:13px}
+.math-composer-tools.has-math-error{border-color:#dfb98f;background:#fff8ee}.has-math-error .math-composer-status{color:#936936!important}
+@media(max-width:600px){.math-composer-toolbar{gap:3px;padding:5px}.math-composer-toolbar button,.math-template-list button{min-height:42px;font-size:12px;padding:7px 8px}.math-composer-status{flex-basis:100%;order:3;font-size:11px!important;padding:2px 7px}.math-preview-toggle{margin-left:auto}.math-template-list{gap:5px;padding:2px 6px 8px}.math-composer-preview{padding:14px;font-size:15px;max-height:280px}}
+.math-composer-tools [hidden],.math-composer-preview[hidden]{display:none!important}
+
+.math-graphical-editor{border:1px solid #c9ded8!important;border-radius:7px!important;padding:5px 9px!important;background:#f4faf7!important;color:#397f72!important;font-size:11px!important;min-height:32px}.math-graphical-editor:hover{background:#e8f4ee!important}@media(max-width:600px){.math-graphical-editor{font-size:12px!important;min-height:38px;padding:6px 10px!important}}

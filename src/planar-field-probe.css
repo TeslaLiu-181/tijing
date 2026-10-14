@@ -1,0 +1,26 @@
+.field-probe-content{padding:11px 12px 14px!important;color:#355052}
+.probe-locate{display:grid;grid-template-columns:minmax(55px,1fr) minmax(55px,1fr) auto auto;align-items:end;gap:6px;padding-bottom:11px;border-bottom:1px solid #e1e9e6}
+.probe-locate label{display:grid;gap:4px;font-size:10px;color:#798e8a}
+.probe-locate input{width:100%;min-width:0;padding:5px 6px;border:1px solid #d4e1db;border-radius:6px;font:inherit;font-size:12px;color:#285f55;background:#fff}
+.probe-locate button{min-height:29px;padding:4px 7px;font-size:11px}
+.probe-position{display:grid;gap:5px;font-size:12px;padding:12px 0 3px}
+.probe-position>span{font-size:10px;color:#83948f}
+.probe-field-section{margin:12px 0 0;padding:0 0 12px;border-bottom:1px solid #e4eae7}
+.probe-field-section h3{font-size:11px;color:#83918d;margin:0 0 8px;font-weight:600}
+.probe-net{display:flex;flex-wrap:wrap;gap:7px 12px;align-items:center;color:#24594e;font-size:15px;overflow-x:auto;overflow-y:hidden;min-height:29px;padding:3px 0;line-height:1.65}
+.probe-net>span{font-size:11px;color:#658176}
+.probe-electric-size{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:12px;margin-top:5px}
+.probe-electric-size>span{font-size:10px;color:#7c8e86}
+.probe-zero{font-size:11px;color:#628074;line-height:1.65;margin:8px 0}
+.probe-field-section table{border-collapse:collapse;width:100%;font-size:12px;margin:10px 0 0}
+.probe-field-section th{font-size:10px;font-weight:400;color:#81938b;text-align:left;padding:4px 5px}
+.probe-field-section td{padding:7px 5px;border-top:1px solid #edf1ed;vertical-align:middle;font-size:11px}
+.probe-field-section td:first-child{width:26%}
+.probe-field-section td:last-child{white-space:nowrap}
+.probe-field-section td button{font-size:12px;min-height:25px;padding:2px 6px;border:1px solid #dae6df;background:#f8fbf9;color:#335d50;border-radius:5px}
+.probe-field-section small{display:block;font-size:9px;color:#8c9b93;margin-top:4px;white-space:normal;line-height:1.6}
+.probe-equation{overflow-x:auto;overflow-y:hidden;font-size:12px;padding:10px 0 5px;line-height:2.2}
+.probe-note,.probe-warning,.probe-empty{font-size:10px;line-height:1.8;color:#849289;margin:11px 0 0}
+.probe-warning{color:#936536;background:#fff8ee;padding:7px;border-radius:5px}
+.probe-empty{font-size:12px;color:#72897d;margin:18px 0}
+#field-probe-button.active{color:#1d7061;background:#e7f4ef;border-color:#7ab5a1}

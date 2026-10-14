@@ -1,0 +1,16 @@
+[Unit]
+Description=Tijing student physics workspace
+After=network.target
+
+[Service]
+Type=simple
+# Hermes: replace the account, installation directory and Node path below.
+User=tijing
+WorkingDirectory=/opt/tijing
+EnvironmentFile=/opt/tijing/.env
+ExecStart=/usr/bin/node --env-file-if-exists=.env server/exam/main.mjs
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

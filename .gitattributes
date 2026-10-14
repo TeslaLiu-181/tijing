@@ -1,0 +1,11 @@
+* text=auto eol=lf
+# The generated HTML retains upstream Three.js shader string whitespace.
+安培力三维实验室.html whitespace=-blank-at-eol
+
+# Stable source archives and untouched binary teaching assets.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.pdf binary
+*.tijingexam binary

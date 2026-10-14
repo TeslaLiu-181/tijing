@@ -1,0 +1,484 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-14",
+  "productVersion": "0.7.0",
+  "scopeNote": "路径均相对项目根目录。此登记用于区分代码、获授权教学材料及测试夹具，不把目录或文件扩展名直接等同于许可证。",
+  "codeLicense": {
+    "identifier": "MIT",
+    "licenseFile": "LICENSE",
+    "scope": "项目原创实现代码；不覆盖第三方组件、教学材料或来源尚待补充的测试夹具。",
+    "mixedFileRule": "同一 mjs/html 文件中的算法及程序实现与题目文字、题图、答案按各自内容类别登记。"
+  },
+  "teachingMaterialPermission": {
+    "status": "maintainer_confirmed_public_redistribution",
+    "confirmedOn": "2026-10-14",
+    "confirmation": "项目维护者已在本次开源整理中明确确认教学材料具备公开再分发授权，并要求完整保留。",
+    "copyrightHolder": "待维护者补充",
+    "sourceCitation": "待维护者补充",
+    "publicRedistribution": "已获维护者确认",
+    "modificationScope": "待维护者补充",
+    "commercialUseScope": "待维护者补充",
+    "otherConditions": "待维护者补充",
+    "writtenEvidenceOrLink": "待维护者补充",
+    "independentReview": "本次登记依据维护者确认；未独立审验授权合同或其他书面文件。",
+    "inheritsCodeMIT": false
+  },
+  "materialCollections": [
+    {
+      "paths": [
+        "assets/guide/",
+        "src/guide-source.json",
+        "src/guide-curriculum.mjs"
+      ],
+      "description": "保留导学案抽取的文字、题图、索引和讲解。"
+    },
+    {
+      "paths": [
+        "src/planar-lessons.mjs",
+        "src/supplement/",
+        "src/example4/"
+      ],
+      "description": "保留教学题设、参考解答与交互场景；其中程序实现代码仍按 MIT。"
+    },
+    {
+      "paths": [
+        "teaching/holiday-20261006/"
+      ],
+      "description": "保留教学内容及制作源码；个人来源目录改为使用者配置，不改变已授权题材。"
+    }
+  ],
+  "provenance": {
+    "sourceNames": "原文件名仅作材料来源线索；不能据此推断作者、出版社或授权范围。",
+    "hashes": "sha256 为登记时文件字节哈希，用于核对内容一致性；不是权属证明。",
+    "embeddedMedia": "guide-source.json 中 45 张 base64 图片与 assets/guide 中图片属于同组教学材料，不能当作互不相关的授权。"
+  },
+  "totals": {
+    "separateTeachingFigures": 45,
+    "teachingRecords": 54,
+    "mixedCodeAndMaterialFiles": 8,
+    "testFixtures": 2
+  },
+  "materials": [
+    {
+      "path": "assets/guide/rId10.png",
+      "category": "teaching_figure",
+      "bytes": 11873,
+      "sha256": "c0d368fe900bba809bcda4b9886b5fe28913c1e629851dbf25f05bc910ef57a4",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId11.png",
+      "category": "teaching_figure",
+      "bytes": 7383,
+      "sha256": "d35ef4b579212b8f57ec5ecb0821501ba6ffd5e222014f62eaf906ad38b01868",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId12.png",
+      "category": "teaching_figure",
+      "bytes": 5817,
+      "sha256": "b3a9769103b80b098e6dec75b2b13c394d289f6d6ab67594e65e2255297ab55e",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId13.png",
+      "category": "teaching_figure",
+      "bytes": 76313,
+      "sha256": "0f2a256ab69c21fd9198b2dd9cf152925ff4adbe855ddb80d1e2f2fe19530245",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId14.png",
+      "category": "teaching_figure",
+      "bytes": 1105,
+      "sha256": "74fb7fdf78b203201e3693c4931955a6513b79f3e98d6d08221499ebbcabeb3f",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId15.png",
+      "category": "teaching_figure",
+      "bytes": 1077,
+      "sha256": "797b3a1284842dc993631fa8c025c94b4e906ea9143c0ab1e67ec23c7f5583b2",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId16.png",
+      "category": "teaching_figure",
+      "bytes": 8378,
+      "sha256": "272e2f9101ce77e4b2d9eeaa6cd6b1fd0245cc8ddb9a3bfef8b43dc53fe54a8b",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId17.png",
+      "category": "teaching_figure",
+      "bytes": 11186,
+      "sha256": "00b22f66181b82a1200fc06a911a75c47e701392ca648901a481afd5a96eb700",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId18.png",
+      "category": "teaching_figure",
+      "bytes": 11759,
+      "sha256": "d4eed91c100cb41e1a9d7cd1011f3e689a44eb9e8113b132bcc70241c826542e",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId19.png",
+      "category": "teaching_figure",
+      "bytes": 18598,
+      "sha256": "a2dc7c89b76e2a79a2b817341a9bd27651b8d3f2bb4c3e6c79ebdc5064df4d07",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId20.png",
+      "category": "teaching_figure",
+      "bytes": 12776,
+      "sha256": "ca07ae834a00e9a68e8330a3861d5e96685eb35887c815d42a720eddf6fb999c",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId21.png",
+      "category": "teaching_figure",
+      "bytes": 8077,
+      "sha256": "68b1deca99cb508eb96f9581b71b2c7ae9d45e195562eaa320fd6ef488bf7918",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId22.png",
+      "category": "teaching_figure",
+      "bytes": 8158,
+      "sha256": "015bcac7b028af523ce75b2be8688076154c228745edacfd8a8615c35bc30215",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId23.png",
+      "category": "teaching_figure",
+      "bytes": 8824,
+      "sha256": "ffee834d625f4ce6fdfd312a62ca7d078752616c26075437e6c838bdcc7bdbd3",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId24.png",
+      "category": "teaching_figure",
+      "bytes": 8475,
+      "sha256": "468db7e96c9271404d993c4a2ff4940ea68b242af4f22c1ba70d72cf7a03b58a",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId25.png",
+      "category": "teaching_figure",
+      "bytes": 12791,
+      "sha256": "33656709358d0b53b485ca21763b45f3c6de219adc0ebb4dbed0f7e8297a2085",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId26.png",
+      "category": "teaching_figure",
+      "bytes": 5600,
+      "sha256": "a52e3ec1484be5f128f9d201e56d13bf4bf1bac59753dbe6bea74ed336cf486d",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId27.png",
+      "category": "teaching_figure",
+      "bytes": 9589,
+      "sha256": "2119b4895e14843d8333bf7031230dee07e6f86926bda34cf24ad411813b1ec8",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId28.png",
+      "category": "teaching_figure",
+      "bytes": 1105,
+      "sha256": "74fb7fdf78b203201e3693c4931955a6513b79f3e98d6d08221499ebbcabeb3f",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId29.png",
+      "category": "teaching_figure",
+      "bytes": 10083,
+      "sha256": "8ba00e5b8b72a2e158020a0baa35b4039072f281389d3ca45341bf5f7f716a2f",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId30.png",
+      "category": "teaching_figure",
+      "bytes": 10734,
+      "sha256": "0a96db3d09740937dd4bc21b4eba43db4892cd7659fb6861fb0035152e8fcd3e",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId31.png",
+      "category": "teaching_figure",
+      "bytes": 10921,
+      "sha256": "2cdb1ee57d83af981990da0012aec8464b82eab264499e409d109cebb402921b",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId32.png",
+      "category": "teaching_figure",
+      "bytes": 15572,
+      "sha256": "54569a4452dc116a711a61b9d43abbf04c9a34afe1a7846ded38a4d380a1faa6",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId33.png",
+      "category": "teaching_figure",
+      "bytes": 20286,
+      "sha256": "45673dabbd73eea0a107551d56093ea7f4e9ba897013df37b1e5a93c0ef910a0",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId34.png",
+      "category": "teaching_figure",
+      "bytes": 25757,
+      "sha256": "450ff71edf63139310f455198210182be2390c9152626f7bd0ac29e48d5b006e",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId35.png",
+      "category": "teaching_figure",
+      "bytes": 29974,
+      "sha256": "1854225240f80a590c732306e133cf2757bf77dff07cfd8de3282578e8348267",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId36.png",
+      "category": "teaching_figure",
+      "bytes": 11734,
+      "sha256": "763a1ce5be44650ca0c3746cb978c6ba200f463c1a6ace0eaffbb46c90a31837",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId37.png",
+      "category": "teaching_figure",
+      "bytes": 4456,
+      "sha256": "6113205e5fa447cea650a9d05c6b78da9cc696f9ae691a0bb07aebebed321a43",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId38.png",
+      "category": "teaching_figure",
+      "bytes": 21672,
+      "sha256": "2f06de36c61ce881e8e9d337cc26ca67421065bacf8ccea5c6f4516543c2fed2",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId39.png",
+      "category": "teaching_figure",
+      "bytes": 6217,
+      "sha256": "2c118f4ec3df6503b3330ecf8ac3d44c63a39c699da931127bdc986b056493d8",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId40.png",
+      "category": "teaching_figure",
+      "bytes": 17064,
+      "sha256": "c993819a46d935781524aed36266b3343b9eb0a27d4f9b923d48bdd494ecebf0",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId41.png",
+      "category": "teaching_figure",
+      "bytes": 36732,
+      "sha256": "af1c908e1ddd09c5fdf8c973a5876b6562148de66d2f19a225d33d6bcb95cb40",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId42.png",
+      "category": "teaching_figure",
+      "bytes": 10400,
+      "sha256": "2471633eb273105f30025a7da65cfccd0d5e0fd8b2b2624d6b1cbb2cabd1b539",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId43.png",
+      "category": "teaching_figure",
+      "bytes": 49282,
+      "sha256": "86452be1d505bdc4d5a447e516ca6051fec0f4e151c703ef110c1090bad84f62",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId44.png",
+      "category": "teaching_figure",
+      "bytes": 15017,
+      "sha256": "7be1dc8c98a9737458b264cbe1946e6d0518508bbc75b4c62036842b3ea9aa28",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId45.png",
+      "category": "teaching_figure",
+      "bytes": 11591,
+      "sha256": "aa2507668048f676f5b722bbb5916c60ba95f07c2ffb78fb8d3dffd8366cc1c7",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId46.png",
+      "category": "teaching_figure",
+      "bytes": 9871,
+      "sha256": "944d2a78eaf52af28649e2b5feaca363d148901425775973824267de71335ee6",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId47.png",
+      "category": "teaching_figure",
+      "bytes": 10572,
+      "sha256": "0859a71f24b5d52c83f855c929ec3a9e2ac45f20556f6004eb8ce34ad28b54c8",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId48.png",
+      "category": "teaching_figure",
+      "bytes": 8418,
+      "sha256": "d36d2dba6a60ae3983009ca5fc52da974ae6ce62d366d2297443db6c17cf97e9",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId49.png",
+      "category": "teaching_figure",
+      "bytes": 11502,
+      "sha256": "d7641629df8611dcf17756c028d9fc2700cc9b62e89511fb8c33f263e6a7ffe9",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId50.png",
+      "category": "teaching_figure",
+      "bytes": 6438,
+      "sha256": "0d80b0c5e1bffb2875c38f5958851de91188541146e619211044506eb7f3fd37",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId51.png",
+      "category": "teaching_figure",
+      "bytes": 10547,
+      "sha256": "78d17d4a44cb3fa208a4a668203445b74c0be30fe34ed9ebe325d21c367cb025",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId52.png",
+      "category": "teaching_figure",
+      "bytes": 6325,
+      "sha256": "0f11251a37084cee356cdd9eda3679414e70a26c39979c71d62c12a8d458aaa7",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId53.png",
+      "category": "teaching_figure",
+      "bytes": 8493,
+      "sha256": "ca27116dbb5a7b08458efc5ff7bd70e86efe82fe4182641c29395e5b07ae1290",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "assets/guide/rId54.png",
+      "category": "teaching_figure",
+      "bytes": 17052,
+      "sha256": "0cb77e4ee43404773309d5c018f419b047af81e891dd04cd206620f90ec194a2",
+      "licenseRule": "teaching-material-permission"
+    },
+    {
+      "path": "src/guide-source.json",
+      "category": "extracted_teaching_source",
+      "bytes": 917673,
+      "sha256": "265e58e949a9b7af6517960b2a05c9f0451c4bc904404682ae4a6f44c71a917c",
+      "licenseRule": "teaching-material-permission",
+      "originalSourceFile": "第一章　专题强化1　安培力作用下导体的平衡和运动问题.docx",
+      "originalSourceSHA256": "44856a7791b787a0dec19ef4605cd31b7c61d985ca7b1bd7334a1a543228f76a",
+      "paragraphCount": 195,
+      "embeddedImageCount": 45,
+      "duplicatesSeparateFigures": true
+    },
+    {
+      "path": "src/guide-curriculum.mjs",
+      "category": "mixed_code_and_teaching_content",
+      "bytes": 20891,
+      "sha256": "8566c0889f87e51cd53d8125489f70b395eacd1b292f6b77beb7c011360dfa39",
+      "licenseRule": "content-level-boundary",
+      "contentBoundary": "题目索引、题意及讲解文字按教学材料登记；程序结构、数据组织与原创实现代码按 MIT。"
+    },
+    {
+      "path": "src/planar-lessons.mjs",
+      "category": "mixed_code_and_teaching_content",
+      "bytes": 13539,
+      "sha256": "8ea2e37bc0dafdc843ce6b047b3cfb5af64e65dbad785e7e7ed7483a24e0663a",
+      "licenseRule": "content-level-boundary",
+      "contentBoundary": "例题条件、问题、答案和讲解文字按教学材料登记；创建场景、参数绑定及求解相关实现代码按 MIT。"
+    },
+    {
+      "path": "src/supplement/catalog.mjs",
+      "category": "mixed_code_and_teaching_content",
+      "bytes": 22416,
+      "sha256": "169a7b60bf599632c091628464e3a20449aece9028eb37c55a324965e5658571",
+      "licenseRule": "content-level-boundary",
+      "contentBoundary": "题目内容、固定题设、答案及讲解文字按教学材料登记；目录组织、参数验证等实现代码按 MIT。"
+    },
+    {
+      "path": "src/example4/template.html",
+      "category": "mixed_code_and_teaching_content",
+      "bytes": 6192,
+      "sha256": "2370394ec4f6888d2aabc56dc3fe330b1634a8546af73e6976d573879828087f",
+      "licenseRule": "content-level-boundary",
+      "contentBoundary": "题意和课堂讲解文字按教学材料登记；HTML 结构及程序挂载实现按 MIT。"
+    },
+    {
+      "path": "teaching/holiday-20261006/answers.mjs",
+      "category": "mixed_code_and_teaching_content",
+      "bytes": 7320,
+      "sha256": "1b39c1f21f072ebe7bd6f93baf854be7e56e54f511ce2d095c2529448a005398",
+      "licenseRule": "content-level-boundary",
+      "contentBoundary": "原题相关标题、参考答案及说明文字按教学材料登记；程序实现部分按 MIT。"
+    },
+    {
+      "path": "teaching/holiday-20261006/native-scenes.mjs",
+      "category": "mixed_code_and_teaching_content",
+      "bytes": 51901,
+      "sha256": "867cbcf3eecaf54af721f062c240ced447aeea6d1872acd5fce74baa61d1ff96",
+      "licenseRule": "content-level-boundary",
+      "contentBoundary": "具体题目条件、场景描述及说明按教学材料登记；场景构造算法和程序实现部分按 MIT。"
+    },
+    {
+      "path": "teaching/holiday-20261006/supplement-answers.mjs",
+      "category": "mixed_code_and_teaching_content",
+      "bytes": 2813,
+      "sha256": "87821b42d6cdc36a96036441c57e218b7f796c0e137fe5f9816d7e71bde1c909",
+      "licenseRule": "content-level-boundary",
+      "contentBoundary": "原题相关答案及说明按教学材料登记；程序实现部分按 MIT。"
+    },
+    {
+      "path": "teaching/holiday-20261006/supplement-scenes.mjs",
+      "category": "mixed_code_and_teaching_content",
+      "bytes": 624,
+      "sha256": "cc93b4a88f69500c00f461d6c7ceca98fdbd7b556352954f9e8a438c44af64a0",
+      "licenseRule": "content-level-boundary",
+      "contentBoundary": "具体题设及说明按教学材料登记；场景构造与参数实现部分按 MIT。"
+    }
+  ],
+  "testFixtures": [
+    {
+      "path": "tests/fixtures/synthetic-physics-columns.pdf",
+      "category": "test_fixture",
+      "bytes": 43248,
+      "sha256": "0a90b672fd041aa229540f55f7ac8d28f5576b6276e81d10bd9c59de11c0fcd4",
+      "licenseRule": "fixture-provenance-pending",
+      "sourceCitation": "待维护者补充",
+      "copyrightHolder": "待维护者补充",
+      "evidence": [
+        "tests/fixtures/synthetic-physics-columns-expected.json 明确标记 syntheticOnly: true",
+        "scripts/qa-ai-columns.mjs 将其用作合成材料验收夹具"
+      ],
+      "conclusion": "命名或旁证表明其用于合成测试；生成来源与授权记录仍待维护者补充，不据此猜测作者或生成工具。"
+    },
+    {
+      "path": "tests/fixtures/synthetic-physics-scan.pdf",
+      "category": "test_fixture",
+      "bytes": 37650,
+      "sha256": "c9bbd5455766cecb3ce27febd9544da7dca94b58d8b7f0a4780407c772d541cc",
+      "licenseRule": "fixture-provenance-pending",
+      "sourceCitation": "待维护者补充",
+      "copyrightHolder": "待维护者补充",
+      "evidence": [
+        "文件名包含 synthetic",
+        "tests/exam-ai.test.mjs 将其作为 PDF 测试夹具"
+      ],
+      "conclusion": "命名或旁证表明其用于合成测试；生成来源与授权记录仍待维护者补充，不据此猜测作者或生成工具。"
+    }
+  ]
+}

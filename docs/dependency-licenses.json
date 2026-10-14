@@ -1,0 +1,1563 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-14",
+  "productVersion": "0.7.0",
+  "source": {
+    "lockfile": "package-lock.json",
+    "manifest": "package.json",
+    "lockfileVersion": 3
+  },
+  "extraction": {
+    "included": "package-lock.json packages 中所有非根条目；保留平台可选依赖。",
+    "direct": "顶层 node_modules/<name> 与 package.json dependencies 或 devDependencies 对应。",
+    "identity": "packagePath 为条目标识；同名不同版本或不同安装位置不合并。",
+    "license": "原样保留锁文件 license 表达式；AND/OR 不拆解，不补猜许可证。",
+    "platform": "全部锁定平台变体均计数，不表示当前环境已经安装这些包。",
+    "evidenceLimit": "仅提取锁文件许可元数据，未逐项核阅依赖的完整 LICENSE/NOTICE 或二进制内含组件。"
+  },
+  "totals": {
+    "packageEntries": 96,
+    "direct": 12,
+    "directRuntime": 9,
+    "directDevelopment": 3,
+    "transitive": 84,
+    "developmentOnly": 42,
+    "notDevelopmentOnly": 54,
+    "optional": 69,
+    "missingLicense": 0
+  },
+  "licenseCounts": [
+    {
+      "license": "(MPL-2.0 OR Apache-2.0)",
+      "count": 1
+    },
+    {
+      "license": "0BSD",
+      "count": 1
+    },
+    {
+      "license": "Apache-2.0",
+      "count": 18
+    },
+    {
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "count": 3
+    },
+    {
+      "license": "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+      "count": 1
+    },
+    {
+      "license": "BSD-2-Clause",
+      "count": 1
+    },
+    {
+      "license": "ISC",
+      "count": 2
+    },
+    {
+      "license": "LGPL-3.0-or-later",
+      "count": 10
+    },
+    {
+      "license": "MIT",
+      "count": 59
+    }
+  ],
+  "packages": [
+    {
+      "packagePath": "node_modules/@electron-internal/extract-zip",
+      "name": "@electron-internal/extract-zip",
+      "version": "1.0.5",
+      "license": "BSD-2-Clause",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@electron/get",
+      "name": "@electron/get",
+      "version": "5.1.0",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@emnapi/runtime",
+      "name": "@emnapi/runtime",
+      "version": "1.11.3",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@esbuild/aix-ppc64",
+      "name": "@esbuild/aix-ppc64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "aix"
+      ],
+      "architectures": [
+        "ppc64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/android-arm",
+      "name": "@esbuild/android-arm",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "android"
+      ],
+      "architectures": [
+        "arm"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/android-arm64",
+      "name": "@esbuild/android-arm64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "android"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/android-x64",
+      "name": "@esbuild/android-x64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "android"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/darwin-arm64",
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/darwin-x64",
+      "name": "@esbuild/darwin-x64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/freebsd-arm64",
+      "name": "@esbuild/freebsd-arm64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "freebsd"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/freebsd-x64",
+      "name": "@esbuild/freebsd-x64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "freebsd"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-arm",
+      "name": "@esbuild/linux-arm",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-arm64",
+      "name": "@esbuild/linux-arm64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-ia32",
+      "name": "@esbuild/linux-ia32",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "ia32"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-loong64",
+      "name": "@esbuild/linux-loong64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "loong64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-mips64el",
+      "name": "@esbuild/linux-mips64el",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "mips64el"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-ppc64",
+      "name": "@esbuild/linux-ppc64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "ppc64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-riscv64",
+      "name": "@esbuild/linux-riscv64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "riscv64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-s390x",
+      "name": "@esbuild/linux-s390x",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "s390x"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/linux-x64",
+      "name": "@esbuild/linux-x64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/netbsd-arm64",
+      "name": "@esbuild/netbsd-arm64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "netbsd"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/netbsd-x64",
+      "name": "@esbuild/netbsd-x64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "netbsd"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/openbsd-arm64",
+      "name": "@esbuild/openbsd-arm64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "openbsd"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/openbsd-x64",
+      "name": "@esbuild/openbsd-x64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "openbsd"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/openharmony-arm64",
+      "name": "@esbuild/openharmony-arm64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "openharmony"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/sunos-x64",
+      "name": "@esbuild/sunos-x64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "sunos"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/win32-arm64",
+      "name": "@esbuild/win32-arm64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "win32"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/win32-ia32",
+      "name": "@esbuild/win32-ia32",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "win32"
+      ],
+      "architectures": [
+        "ia32"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@esbuild/win32-x64",
+      "name": "@esbuild/win32-x64",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "win32"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/colour",
+      "name": "@img/colour",
+      "version": "1.1.0",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-darwin-arm64",
+      "name": "@img/sharp-darwin-arm64",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-darwin-x64",
+      "name": "@img/sharp-darwin-x64",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-freebsd-wasm32",
+      "name": "@img/sharp-freebsd-wasm32",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "freebsd"
+      ],
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-darwin-arm64",
+      "name": "@img/sharp-libvips-darwin-arm64",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-darwin-x64",
+      "name": "@img/sharp-libvips-darwin-x64",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-linux-arm",
+      "name": "@img/sharp-libvips-linux-arm",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-linux-arm64",
+      "name": "@img/sharp-libvips-linux-arm64",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-linux-ppc64",
+      "name": "@img/sharp-libvips-linux-ppc64",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "ppc64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-linux-riscv64",
+      "name": "@img/sharp-libvips-linux-riscv64",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "riscv64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-linux-s390x",
+      "name": "@img/sharp-libvips-linux-s390x",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "s390x"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-linux-x64",
+      "name": "@img/sharp-libvips-linux-x64",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-linuxmusl-arm64",
+      "name": "@img/sharp-libvips-linuxmusl-arm64",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-libvips-linuxmusl-x64",
+      "name": "@img/sharp-libvips-linuxmusl-x64",
+      "version": "1.3.3",
+      "license": "LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-linux-arm",
+      "name": "@img/sharp-linux-arm",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-linux-arm64",
+      "name": "@img/sharp-linux-arm64",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-linux-ppc64",
+      "name": "@img/sharp-linux-ppc64",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "ppc64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-linux-riscv64",
+      "name": "@img/sharp-linux-riscv64",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "riscv64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-linux-s390x",
+      "name": "@img/sharp-linux-s390x",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "s390x"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-linux-x64",
+      "name": "@img/sharp-linux-x64",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-linuxmusl-arm64",
+      "name": "@img/sharp-linuxmusl-arm64",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-linuxmusl-x64",
+      "name": "@img/sharp-linuxmusl-x64",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-wasm32",
+      "name": "@img/sharp-wasm32",
+      "version": "0.35.4",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-webcontainers-wasm32",
+      "name": "@img/sharp-webcontainers-wasm32",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": [
+        "wasm32"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-win32-arm64",
+      "name": "@img/sharp-win32-arm64",
+      "version": "0.35.4",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "win32"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-win32-ia32",
+      "name": "@img/sharp-win32-ia32",
+      "version": "0.35.4",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "win32"
+      ],
+      "architectures": [
+        "ia32"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@img/sharp-win32-x64",
+      "name": "@img/sharp-win32-x64",
+      "version": "0.35.4",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "win32"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas",
+      "name": "@napi-rs/canvas",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-android-arm64",
+      "name": "@napi-rs/canvas-android-arm64",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "android"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-darwin-arm64",
+      "name": "@napi-rs/canvas-darwin-arm64",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-darwin-x64",
+      "name": "@napi-rs/canvas-darwin-x64",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-linux-arm-gnueabihf",
+      "name": "@napi-rs/canvas-linux-arm-gnueabihf",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-linux-arm64-gnu",
+      "name": "@napi-rs/canvas-linux-arm64-gnu",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-linux-arm64-musl",
+      "name": "@napi-rs/canvas-linux-arm64-musl",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-linux-riscv64-gnu",
+      "name": "@napi-rs/canvas-linux-riscv64-gnu",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "riscv64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-linux-x64-gnu",
+      "name": "@napi-rs/canvas-linux-x64-gnu",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-linux-x64-musl",
+      "name": "@napi-rs/canvas-linux-x64-musl",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "linux"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-win32-arm64-msvc",
+      "name": "@napi-rs/canvas-win32-arm64-msvc",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "win32"
+      ],
+      "architectures": [
+        "arm64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@napi-rs/canvas-win32-x64-msvc",
+      "name": "@napi-rs/canvas-win32-x64-msvc",
+      "version": "1.0.9",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "win32"
+      ],
+      "architectures": [
+        "x64"
+      ]
+    },
+    {
+      "packagePath": "node_modules/@types/node",
+      "name": "@types/node",
+      "version": "24.19.0",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@types/trusted-types",
+      "name": "@types/trusted-types",
+      "version": "2.0.7",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/@xmldom/xmldom",
+      "name": "@xmldom/xmldom",
+      "version": "0.9.12",
+      "license": "MIT",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/commander",
+      "name": "commander",
+      "version": "8.3.0",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/debug",
+      "name": "debug",
+      "version": "4.4.3",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/detect-libc",
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/dompurify",
+      "name": "dompurify",
+      "version": "3.4.15",
+      "license": "(MPL-2.0 OR Apache-2.0)",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/electron",
+      "name": "electron",
+      "version": "44.4.2",
+      "license": "MIT",
+      "direct": true,
+      "directScope": "development",
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/env-paths",
+      "name": "env-paths",
+      "version": "3.0.0",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/esbuild",
+      "name": "esbuild",
+      "version": "0.25.9",
+      "license": "MIT",
+      "direct": true,
+      "directScope": "development",
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/fflate",
+      "name": "fflate",
+      "version": "0.8.3",
+      "license": "MIT",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/fsevents",
+      "name": "fsevents",
+      "version": "2.3.2",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": [
+        "darwin"
+      ],
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/graceful-fs",
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "license": "ISC",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/katex",
+      "name": "katex",
+      "version": "0.16.22",
+      "license": "MIT",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/marked",
+      "name": "marked",
+      "version": "18.0.13",
+      "license": "MIT",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/mathlive",
+      "name": "mathlive",
+      "version": "0.111.0",
+      "license": "MIT",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/ms",
+      "name": "ms",
+      "version": "2.1.3",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/pdfjs-dist",
+      "name": "pdfjs-dist",
+      "version": "6.3.289",
+      "license": "Apache-2.0",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/playwright",
+      "name": "playwright",
+      "version": "1.58.2",
+      "license": "Apache-2.0",
+      "direct": true,
+      "directScope": "development",
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/playwright-core",
+      "name": "playwright-core",
+      "version": "1.58.2",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/progress",
+      "name": "progress",
+      "version": "2.0.3",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/semver",
+      "name": "semver",
+      "version": "7.8.5",
+      "license": "ISC",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/sharp",
+      "name": "sharp",
+      "version": "0.35.4",
+      "license": "Apache-2.0",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/sumchecker",
+      "name": "sumchecker",
+      "version": "3.0.1",
+      "license": "Apache-2.0",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/three",
+      "name": "three",
+      "version": "0.180.0",
+      "license": "MIT",
+      "direct": true,
+      "directScope": "runtime",
+      "developmentOnly": false,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/tslib",
+      "name": "tslib",
+      "version": "2.8.1",
+      "license": "0BSD",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": false,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/undici",
+      "name": "undici",
+      "version": "7.30.0",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": true,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    },
+    {
+      "packagePath": "node_modules/undici-types",
+      "name": "undici-types",
+      "version": "7.24.6",
+      "license": "MIT",
+      "direct": false,
+      "directScope": null,
+      "developmentOnly": true,
+      "optional": false,
+      "devOptional": false,
+      "operatingSystems": null,
+      "architectures": null
+    }
+  ]
+}

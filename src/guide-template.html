@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>题景 · 专题强化1</title><style>/* MATH_STYLE */</style><style>/* INLINE_STYLE */</style></head>
+<body>
+<header class="app-header"><div class="identity"><span class="identity-mark">↗</span><div><strong>题景 <em>安培力的平衡与运动</em></strong><small>选择性必修二 / 专题强化 01</small></div></div><div class="header-actions"><span class="offline-dot">离线课堂</span><button id="save-state">保存备课</button><button id="load-state">载入备课</button><button id="help-button">说明</button><button id="fullscreen">全屏 ⛶</button></div><input id="state-file" type="file" accept=".json,application/json" hidden></header>
+<div class="app-shell">
+ <aside class="navigation"><div class="nav-title"><span>导学案目录</span><span class="count">19 题组</span></div><nav id="topic-list" aria-label="题号目录"></nav><div class="nav-bottom"><span class="mini-logo">◌</span><p>从题图出发<br>让空间关系看得见</p></div></aside>
+ <main class="lesson-main">
+  <div class="lesson-heading"><div><span id="section-label" class="eyebrow"></span><h1 id="lesson-title"></h1></div><div class="mode-switch" role="group" aria-label="讲解与探究"><button data-mode="lesson" class="active">题设讲解</button><button data-mode="explore">自由探究</button></div></div>
+  <div class="question-row"><div id="question-tabs" role="group" aria-label="小问"></div><button id="reset-question" title="还原当前小问的题设状态">↺ 还原本问</button></div>
+  <div class="lesson-grid">
+   <section class="visual-column">
+    <div class="scene-panel" id="scene-panel">
+     <div class="scene-toolbar"><div class="camera-switch" role="group" aria-label="观察方向"><button data-view="source" class="active">题图视角</button><button data-view="free">三维</button><button data-view="plane">平面</button><button data-view="top">俯视</button><button data-view="left">从左看</button></div><div class="camera-switch" role="group" aria-label="投影方式"><button data-projection="ortho" class="active">正交</button><button data-projection="perspective">透视</button></div></div>
+     <div id="three-viewport"><div id="three-labels"></div><div id="scene-error" hidden></div></div>
+     <div id="scene-badge" class="scene-badge">原题关键状态</div>
+     <div class="scene-legend"><span class="legend-current">电流 · 有向流线</span><span class="legend-field">磁场 · 细场线</span><span class="legend-force">力 · 实心箭头</span></div>
+     <div class="scene-footer"><span id="camera-caption">拖动旋转 · 滚轮缩放</span><span>流速与箭头长度仅为示意</span></div>
+    </div>
+    <div class="learning-dock panel">
+     <div class="dock-top"><div><span class="eyebrow">观察 · 判断 · 解释</span><strong id="reveal-caption">当前问答案已隐藏</strong></div><button class="primary" id="reveal-next">展开下一步解析 →</button><button id="hide-answer">隐藏答案</button></div>
+     <div class="layers"><label><input type="checkbox" id="layer-field">磁感线</label><label><input type="checkbox" id="layer-forces">受力</label><label><input type="checkbox" id="layer-resultants">合力 / 转动趋势</label><label><input type="checkbox" id="layer-moment">等效磁针</label><button id="play-trend">▶ 演示变化</button><button id="stop-trend">↺ 动画复位</button></div>
+     <div class="hand-row"><label for="part-select">观察部位</label><select id="part-select"></select><div class="hand-buttons"><button data-hand="right">右手握法</button><button data-hand="left">左手定则</button><button id="hide-hand">隐藏手</button></div></div>
+     <div id="hand-instruction" hidden><span id="hand-text"></span><button id="hand-next">下一步手势 →</button><button id="focus-hand">放大局部 ⊕</button></div>
+    </div>
+    <details id="parameter-panel" class="panel"><summary><span>探究参数</span><span id="parameter-note">进入自由探究后可调整</span></summary><div id="parameters"></div><div class="parameter-actions"><button id="reverse-current">⇄ 反转电流</button><button id="parallel-field">磁场平行于棒</button><span id="numeric-convention"></span></div></details>
+   </section>
+   <aside class="paper-column panel">
+    <div class="paper-tabs" role="group" aria-label="题干与解析"><button data-paper="question" class="active">原题对照</button><button data-paper="analysis">分步解析</button><button data-paper="measure">当前关系</button></div>
+    <section id="paper-question" class="paper-content"><div class="figure-heading"><span id="figure-caption">导学案原图</span><button id="enlarge-figure">放大 ↗</button></div><div id="source-figures"></div><div id="current-question" class="current-question"></div><details id="full-stem" open><summary>完整题干与选项</summary><div id="stem-content" class="source-prose"></div></details></section>
+    <section id="paper-analysis" class="paper-content" hidden><div class="analysis-heading"><span class="eyebrow">正确解题路径</span><h2>一步一步，看清关系</h2></div><div id="solution-steps"></div><p id="topic-notice" class="note"></p></section>
+    <section id="paper-measure" class="paper-content" hidden><div id="live-relation"></div><div id="measurement-values"></div><div id="plot-panel" hidden><div class="plot-tabs"><button data-plot="a" class="active">加速度</button><button data-plot="v">速度</button><button data-plot="f">摩擦力</button></div><div id="plot"></div></div><div id="local-relation"></div></section>
+   </aside>
+  </div>
+  <footer class="lesson-footer"><span id="lesson-position"></span><span id="mode-description"></span></footer>
+ </main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<dialog id="figure-dialog"><div class="dialog-header"><strong>导学案原图</strong><button data-close="figure-dialog">关闭 ✕</button></div><div id="figure-large"></div></dialog>
+<dialog id="help-dialog"><div class="dialog-header"><strong>课堂使用说明</strong><button data-close="help-dialog">关闭 ✕</button></div><h2>把纸上的题，变成可以观察的空间。</h2><ol><li>从目录选择题组和小问。新小问自动准备关键状态，当前答案先隐藏。</li><li>在原题图与三维图之间对照；点击“展开下一步解析”逐步讲解。磁感线、受力和合力可独立开关。</li><li>先选“观察部位”，再按需要开启右手或左手。手势按钮互不强制接力；点击下一步手势，查看各指对应关系。</li><li>“放大局部”便于看掌心和手指；“题图视角”返回全景。平面、俯视、从左看对应不同观察方向，正交适合几何判断。</li><li>进入自由探究后调整各题参数。返回题设会恢复原题条件，重新隐藏答案。方向题只显示趋势，不把示意流速当作真实运动速度。</li><li>点击保存备课，下载状态文件；在教室打开本HTML，再载入状态。题号、视角及探究参数会恢复，答案与手模型先隐藏。</li></ol><p>电源始终使用一长一短平行线；电流、磁场和力分别使用有向流线、细场线和实心箭头。数学公式与字体已内嵌，断网首次打开也可使用。</p><p>空格播放／暂停变化，R 还原本问；在输入框和对话框内不触发快捷键。支持 WebGL 2 的 Edge / Chrome 可直接打开。</p><details><summary>模型与来源</summary><p>原题、原图来自本地导学案。计算题采用题给近似值，探究模式按实际角度计算。磁体场与缺少数值的题景标为示意，不从题图像素推测真实场强；非匀强场用局部电流元判断受力。</p><p>Three.js r180 / KaTeX · MIT 许可已保留。程序不联网，不采集学生数据。</p></details></dialog>
+<!-- LIBRARY_LICENSES -->
+<script>/* INLINE_APP */</script></body></html>

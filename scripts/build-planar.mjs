@@ -1,0 +1,11 @@
+import {build} from 'esbuild';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {resolve} from 'node:path';
+import {mathliveFontCSS,inlineMathlivePlugin} from './mathlive-assets.mjs';
+const result=await build({entryPoints:['src/planar-app.mjs'],bundle:true,write:false,format:'iife',target:'es2020',minify:true,legalComments:'inline',plugins:[inlineMathlivePlugin()]});
+let mathCSS=readFileSync('node_modules/katex/dist/katex.min.css','utf8');
+mathCSS=mathCSS.replace(/src:[^;}]+/g,d=>{const m=d.match(/url\(([^)]+\.woff2)\)/);return m?`src:url(data:font/woff2;base64,${readFileSync(resolve('node_modules/katex/dist',m[1])).toString('base64')}) format("woff2")`:d;});
+mathCSS+='\n'+mathliveFontCSS();
+const styles=['src/planar-style.css','src/planar-workspace-layout.css','src/planar-timeline.css','src/planar-timeline-bookmarks.css','src/planar-context-menu.css','src/planar-field-probe.css','src/formula-editor.css','src/planar-construction-ui.css','src/planar-polygon-editor.css','src/planar-parameter-board.css','src/planar-algebra-panel.css','src/planar-motion-plot.css','src/planar-parameter-slider-dialog.css','src/planar-parameter-playback.css','src/planar-object-style-dialog.css','src/planar-example-gallery.css','src/planar-dependency-graph.css'].map(path=>readFileSync(path,'utf8')).join('\n');
+const html=readFileSync('src/planar-template.html','utf8').replace('/* MATH_STYLE */',()=>mathCSS).replace('/* INLINE_STYLE */',()=>styles).replace('/* INLINE_APP */',()=>result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script')).replace('LIBRARY_LICENSES',()=>readFileSync('node_modules/katex/LICENSE','utf8')+'\n'+readFileSync('node_modules/mathlive/LICENSE.txt','utf8'));
+writeFileSync('带电粒子平面沙盒.html',html.replace(/[ \t]+$/gm,''));console.log(`Built 带电粒子平面沙盒.html (${Buffer.byteLength(html).toLocaleString()} bytes; fully offline)`);

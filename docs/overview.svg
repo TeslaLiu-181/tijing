@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="780" viewBox="0 0 1280 780" role="img" aria-labelledby="title desc">
+  <title id="title">题景 v0.7.0 — 物理教学全栈项目概览</title>
+  <desc id="desc">教师从资源导入校对到场景构造、原生计算、保存，再发布班组快照或离线导出。原生 JavaScript 宿主以 iframe 和 bridge 连接物理编辑器，Node.js 24 HTTP 服务使用 SQLite 和持久附件。AI 辅助自动建模仅支持原生平面场景；微信默认关闭。代码 MIT，教学材料遵循单独授权说明。</desc>
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#dfe8d9" stroke-width=".7"/></pattern>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#699f85" stroke-width="1.3"/></marker>
+    <style>text{font-family:Inter,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}.mono{font-family:Consolas,"SFMono-Regular",monospace}.ink{fill:#183a36}.muted{fill:#536d67}.teal{fill:#086f61}.small{font-size:14px}.caption{font-size:12px}</style>
+  </defs>
+  <rect width="1280" height="780" rx="24" fill="#f6f8f2"/>
+  <rect x="1" y="1" width="1278" height="778" rx="23" fill="none" stroke="#d4e2d4"/>
+  <rect x="870" y="18" width="380" height="202" rx="22" fill="url(#grid)"/>
+  <g transform="translate(54 44)"><rect width="48" height="48" rx="14" fill="#104a43"/><text x="24" y="32" text-anchor="middle" fill="#e1f2dc" font-size="24" font-weight="700">景</text><text x="64" y="22" class="ink" font-size="24" font-weight="700">题景</text><text x="65" y="43" class="muted" font-size="11" letter-spacing="2">OPEN SOURCE / v0.7.0</text></g>
+  <text x="54" y="152" class="ink" font-size="38" font-weight="750" letter-spacing="-1">把一道题，变成可探索的物理现场。</text>
+  <text x="56" y="188" class="muted" font-size="17">题目资源 · 原生物理沙盒 · 师生教学空间 · AI 辅助建模</text>
+  <g transform="translate(1000 42)"><circle cx="81" cy="72" r="62" fill="none" stroke="#bdd7c4"/><ellipse cx="81" cy="72" rx="104" ry="29" transform="rotate(-33 81 72)" fill="none" stroke="#538f74" stroke-width="1.5"/><circle cx="81" cy="72" r="11" fill="#0c7461"/><circle cx="157" cy="27" r="6" fill="#c18e49"/><path d="M25 133H150" stroke="#bdd1c0"/><text x="34" y="157" class="muted mono" font-size="13">observe · explore</text></g>
+
+  <g transform="translate(54 232)">
+    <rect width="1172" height="96" rx="17" fill="#e6f0e2" stroke="#d1e0cf"/>
+    <text x="22" y="25" class="teal" font-size="11" font-weight="700" letter-spacing="1.6">TEACHING WORKFLOW</text>
+    <g class="ink" font-size="16" font-weight="650"><text x="22" y="64">资源导入与校对</text><text x="274" y="64">场景构造</text><text x="497" y="64">原生计算</text><text x="723" y="64">保存场景</text><text x="939" y="64">班组发布 / 离线导出</text></g>
+    <g fill="none" stroke="#699f85" stroke-width="1.3" marker-end="url(#arrow)"><path d="M173 58H235"/><path d="M373 58H458"/><path d="M596 58H682"/><path d="M822 58H899"/></g>
+  </g>
+
+  <g transform="translate(54 354)">
+    <rect width="842" height="294" rx="20" fill="#fffefa" stroke="#d5e1d5"/>
+    <text x="24" y="32" class="muted" font-size="11" font-weight="700" letter-spacing="1.5">FULL-STACK ARCHITECTURE</text>
+    <g transform="translate(24 52)">
+      <rect width="794" height="56" rx="11" fill="#e3efe3"/>
+      <text x="18" y="24" class="ink" font-size="16" font-weight="700">Web 教学宿主</text><text x="18" y="43" class="muted caption">原生 JavaScript</text>
+      <text x="221" y="33" class="teal small">题库与资源</text><text x="389" y="33" class="teal small">师生账号与班组</text><text x="597" y="33" class="teal small">场景快照与分享</text>
+    </g>
+    <text x="422" y="131" text-anchor="middle" class="muted mono" font-size="12">↓ editor-client / bridge · iframe ↓</text>
+    <g transform="translate(24 143)">
+      <rect width="794" height="56" rx="11" fill="#f0f3e9"/>
+      <text x="18" y="24" class="ink" font-size="16" font-weight="700">原生沙盒与编辑器</text><text x="18" y="43" class="muted caption">几何、场与运动观察</text>
+      <text x="230" y="33" class="teal mono" font-size="15">planar</text><text x="409" y="33" class="teal mono" font-size="15">example4</text><text x="608" y="33" class="teal mono" font-size="15">supplement</text>
+    </g>
+    <text x="422" y="221" text-anchor="middle" class="muted mono" font-size="12">HTTP API · server/exam/main.mjs / http.mjs</text>
+    <g transform="translate(24 233)">
+      <rect width="794" height="39" rx="10" fill="#f1eadc"/>
+      <text x="18" y="26" class="ink" font-size="14" font-weight="650">Node.js 24</text><text x="239" y="26" class="muted small">认证与业务路由</text><text x="429" y="26" class="muted small">SQLite</text><text x="608" y="26" class="muted small">持久附件</text>
+    </g>
+  </g>
+  <g transform="translate(920 354)">
+    <rect width="306" height="294" rx="20" fill="#104a43"/>
+    <text x="25" y="33" fill="#bcdbca" font-size="11" letter-spacing="1.3">IN YOUR OWN TEACHING SPACE</text>
+    <text x="25" y="70" fill="#f1f7ed" font-size="22" font-weight="700">教师组织，学生探索。</text>
+    <g fill="#d6e8d9" font-size="14"><text x="25" y="108">独立班级 / 学习小组</text><text x="25" y="137">教学 API 分配与账号个性化</text></g>
+    <path d="M25 159H281" stroke="#ffffff28"/>
+    <text x="25" y="188" fill="#f1f7ed" font-size="16" font-weight="650">AI 候选 → 原生校验 → 确认</text>
+    <text x="25" y="214" fill="#c7dfcd" font-size="12">自动建模仅覆盖原生平面场景</text>
+    <text x="25" y="254" fill="#c7dfcd" font-size="12">微信默认关闭，配置官方应用后启用</text>
+  </g>
+  <g transform="translate(54 674)">
+    <text y="17" class="teal" font-size="14" font-weight="700">给教师：USER_GUIDE</text><text x="312" y="17" class="teal" font-size="14" font-weight="700">给开发者：ARCHITECTURE / DEVELOPMENT</text><text x="830" y="17" class="teal" font-size="14" font-weight="700">给 Agent：AGENTS / FILE_MAP</text>
+    <path d="M0 37H1172" stroke="#d3dfd2"/>
+    <text y="63" class="muted" font-size="12">代码采用 MIT；教材、教学材料与依赖的许可分别见 ASSET_LICENSES.md 及相关声明。</text>
+    <text x="1172" y="63" text-anchor="end" class="muted mono" font-size="12">docs/guide/index.html</text>
+  </g>
+</svg>

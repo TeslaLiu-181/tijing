@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="题景 v0.7.0 开源项目离线导览：教师使用路径、全栈架构、Agent 阅读入口、部署与数据边界。">
+  <title>题景 · 开源项目导览</title>
+  <style>
+    :root{--ink:#183a36;--muted:#536d67;--teal:#086f61;--teal-dark:#104a43;--mint:#dcefe5;--paper:#f6f8f2;--white:#fffefa;--line:#d8e3d9;--sand:#f0e6d2;--amber:#805b22;--radius:22px;--shadow:0 12px 40px #244d3e08}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.7}a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:4px}button,input{font:inherit}button,a,input,summary{-webkit-tap-highlight-color:transparent}button,summary{cursor:pointer}button{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #c28b32;outline-offset:5px}button:disabled{cursor:default}img,svg{max-width:100%}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.3;text-wrap:balance}h2{font-size:clamp(1.65rem,3vw,2.2rem);letter-spacing:-.04em}h3{font-size:1.13rem}p{overflow-wrap:anywhere}code{font-family:Consolas,"SFMono-Regular",monospace;font-size:.88em;overflow-wrap:anywhere}pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}button{border:0}a,button{transition:background-color .18s,color .18s,border-color .18s}::selection{background:#b6dfce;color:#173c35}[hidden]{display:none!important}
+    .skip{position:fixed;left:20px;top:-100px;z-index:50;background:var(--teal-dark);color:white;padding:12px 18px;border-radius:8px}.skip:focus{top:12px}.wrap{width:min(1192px,calc(100% - 64px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#f6f8f2f5;border-bottom:1px solid var(--line)}.top-inner{min-height:80px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);flex-shrink:0}.brand-mark{display:grid;place-items:center;width:42px;height:42px;background:var(--teal-dark);border-radius:13px;color:#d8f3d9;font-weight:700;font-size:21px}.brand-name{font-size:20px;font-weight:750;letter-spacing:.05em}.brand small{display:block;font-size:11px;font-weight:500;letter-spacing:.16em;line-height:1.2;color:var(--muted)}.top-nav{display:flex;gap:26px;margin-left:auto;align-items:center}.top-nav a{font-size:14px;text-decoration:none;color:var(--muted);padding:10px 0;white-space:nowrap}.top-nav a:hover{color:var(--teal)}.version{border:1px solid #bed8c9;border-radius:99px;padding:4px 12px;font-size:12px;color:var(--teal);white-space:nowrap;font-weight:700}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.16em;color:var(--teal);text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:22px;height:2px;background:currentColor}.hero{padding:72px 0 42px;display:grid;grid-template-columns:1.12fr 1fr;gap:56px;align-items:center}.hero h1{font-size:clamp(2.45rem,4.6vw,3.65rem);font-weight:750;letter-spacing:-.055em;margin:22px 0}.hero h1 em{font-style:normal;color:var(--teal)}.hero-description{font-size:17px;max-width:580px;color:var(--muted);line-height:1.9}.hero-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;border-radius:12px;text-decoration:none;font-size:14px;font-weight:650;padding:10px 18px;background:var(--teal);color:white;border:1px solid var(--teal)}.button:hover{background:var(--teal-dark);border-color:var(--teal-dark)}.button.secondary{background:transparent;color:var(--teal);border-color:#bad0c2}.button.secondary:hover{background:var(--mint)}.hero-note{font-size:12px;color:var(--muted);margin-top:18px}.hero-art{position:relative;min-height:380px;border:1px solid #cdded1;background:linear-gradient(145deg,#e8f1e7,#f3f6ed);border-radius:32px;overflow:hidden}.art-grid{position:absolute;inset:0;background-image:linear-gradient(#93b8a71a 1px,transparent 1px),linear-gradient(90deg,#93b8a71a 1px,transparent 1px);background-size:30px 30px}.hero-art svg{display:block;width:100%;height:380px;position:relative}.art-caption{position:absolute;left:23px;bottom:18px;font-size:11px;color:#4c6b5d;letter-spacing:.08em}.feature-strip{display:grid;grid-template-columns:repeat(4,1fr);margin-bottom:70px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}.strip-item{padding:0 25px;border-right:1px solid var(--line)}.strip-item:first-child{padding-left:0}.strip-item:last-child{border:0}.strip-item b{display:block;font-size:14px}.strip-item span{font-size:12px;color:var(--muted)}section{margin-bottom:76px}.section-heading{display:flex;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:26px}.section-heading .eyebrow{margin-bottom:12px}.section-heading>p{max-width:370px;color:var(--muted);font-size:14px}.section-number{font-size:12px;letter-spacing:.1em;color:var(--muted);font-weight:600}.role-panel{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--white);box-shadow:var(--shadow)}.role-bar{display:flex;gap:8px;padding:12px;background:#edf2e9;border-bottom:1px solid var(--line)}.role-tab{flex:1;min-height:48px;border:1px solid transparent;border-radius:12px;background:transparent;color:var(--muted);font-weight:650}.role-tab[aria-selected="true"]{background:var(--white);color:var(--teal-dark);border-color:var(--line);box-shadow:0 3px 9px #244d3e08}.role-tab:hover{background:#fff8}.role-content{padding:32px}.role-intro{display:flex;justify-content:space-between;gap:24px;margin-bottom:26px}.role-intro h3{font-size:23px;margin-bottom:8px}.role-intro p{color:var(--muted);font-size:14px;max-width:700px}.role-intro>a{font-size:13px;white-space:nowrap;align-self:center}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{border-left:2px solid #c9dfd1;padding-left:18px}.step .num{font:500 12px Consolas,monospace;color:var(--teal);display:block;margin-bottom:10px}.step h4{margin:0 0 8px;font-size:15px}.step p{font-size:13px;color:var(--muted);line-height:1.8}.step a{font-size:12px;display:inline-block;margin-top:12px}.architecture{display:grid;grid-template-columns:1fr 240px;gap:20px}.architecture-main{display:grid;gap:12px}.layer{border:1px solid var(--line);border-radius:18px;background:var(--white);padding:24px;display:grid;grid-template-columns:130px 1fr;gap:22px}.layer-label{font-size:11px;letter-spacing:.1em;color:var(--muted)}.layer-label b{font-size:17px;color:var(--ink);letter-spacing:0;display:block;margin-top:4px}.layer-content{display:flex;gap:12px;flex-wrap:wrap}.node{flex:1;background:#f0f5ec;border-radius:10px;padding:12px 14px;min-width:135px;font-size:14px}.node small{display:block;font-size:11px;color:var(--muted);margin-top:3px}.node.teal{background:#e0f0e6}.node.sand{background:#f3eddf}.flow-label{font-size:11px;color:var(--muted);padding-left:177px;line-height:1.5}.flow-label:before{content:"↓";color:var(--teal);margin-right:10px;font-size:16px}.architecture-aside{background:var(--teal-dark);color:#f0f8ee;border-radius:18px;padding:24px;display:flex;flex-direction:column;justify-content:center;gap:20px}.architecture-aside .aside-label{font-size:11px;color:#c3dfd1;letter-spacing:.1em}.architecture-aside h3{font-size:22px}.architecture-aside p{font-size:13px;color:#d0e5d9;line-height:1.9}.architecture-aside a{color:#d5f7db;font-size:13px}.architecture-aside hr{border:0;border-top:1px solid #ffffff26;width:100%;margin:0}.caption{margin-top:14px;color:var(--muted);font-size:12px}.workflow{display:flex;gap:0;align-items:stretch;margin-top:24px}.workflow-item{flex:1;position:relative;border-top:2px solid #bad8c5;padding:17px 18px 0 0}.workflow-item:before{content:"";position:absolute;width:7px;height:7px;background:var(--teal);border:4px solid var(--paper);box-sizing:content-box;border-radius:50%;left:-4px;top:-8px}.workflow-item b{font-size:13px;display:block}.workflow-item small{font-size:11px;color:var(--muted);display:block;margin-top:4px}.modules-toolbar{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:18px}.search-box{position:relative;flex:1;max-width:620px}.search-box svg{position:absolute;left:16px;top:15px;width:20px;height:20px;color:var(--muted)}.search-box input{width:100%;height:50px;border:1px solid #c7d9cd;background:var(--white);border-radius:12px;padding:10px 45px;color:var(--ink);font-size:14px}.search-label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:7px}.search-wrap{flex:1}.search-wrap .search-box{max-width:none}.search-count{font-size:12px;color:var(--muted);align-self:flex-end;padding-bottom:13px;white-space:nowrap}.module-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.module-card{padding:24px;border:1px solid var(--line);background:var(--white);border-radius:18px;display:flex;flex-direction:column;min-height:215px}.module-tag{font-size:10px;letter-spacing:.12em;color:var(--teal);font-weight:700;margin-bottom:14px}.module-card h3{margin-bottom:9px}.module-card p{font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:18px}.module-card a{font-size:12px;margin-top:auto;overflow-wrap:anywhere}.empty{padding:35px;border:1px dashed #bfd0c3;border-radius:16px;text-align:center;color:var(--muted)}.empty button{display:block;margin:12px auto 0;min-height:44px;background:var(--mint);border-radius:8px;padding:6px 18px;color:var(--teal)}.start-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px}.start-copy{background:#e8f0e4;border:1px solid var(--line);padding:28px;border-radius:20px}.start-copy h3{font-size:24px;margin:8px 0 16px}.start-copy p{font-size:14px;color:var(--muted)}.requirements{padding:0;list-style:none;margin:22px 0 0}.requirements li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid #cddcca;font-size:12px}.requirements li b{font-weight:650;text-align:right}.terminal{background:#173e37;color:#e4f4e8;border-radius:20px;overflow:hidden;display:flex;flex-direction:column}.terminal-bar{display:flex;gap:10px;align-items:center;padding:14px 18px;border-bottom:1px solid #ffffff1c}.terminal-tabs{display:flex;gap:4px;flex:1}.terminal-tabs button{min-height:36px;padding:6px 10px;border-radius:7px;background:transparent;color:#b9d7c9;font-size:12px}.terminal-tabs button[aria-pressed="true"]{background:#30544a;color:white}.copy-button{font-size:12px;border:1px solid #7ca997;background:transparent;color:#e4f4e8;border-radius:7px;min-height:36px;padding:5px 12px}.copy-button:hover{background:#30544a}.terminal pre{font-size:13px;line-height:2.15;padding:26px 28px;color:#f1f9ef;flex:1}.terminal-note{font-size:12px;padding:0 28px 22px;color:#b8d8c6}.terminal-note a{color:#d2f2da}.copy-status{min-height:1.7em;margin-top:10px;font-size:12px;color:var(--muted)}.boundaries{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.boundary{border-top:3px solid var(--teal);background:var(--white);padding:24px;border-radius:0 0 18px 18px}.boundary:nth-child(2){border-color:#668268}.boundary:nth-child(3){border-color:#b48b46}.boundary h3{margin-bottom:12px}.boundary p{font-size:13px;color:var(--muted);line-height:1.9}.boundary ul{padding-left:18px;margin:16px 0 0;font-size:13px;color:var(--muted)}.boundary li+li{margin-top:9px}.limit-list{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.limit-list details{border:1px solid var(--line);border-radius:12px;background:#f8faf5;padding:0 18px;align-self:start}.limit-list summary{padding:16px 0;font-size:14px;font-weight:650}.limit-list p{font-size:13px;color:var(--muted);padding:0 0 18px;line-height:1.9}.docs-grid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--white)}.doc-link{display:flex;align-items:center;gap:18px;padding:22px 24px;text-decoration:none;border-bottom:1px solid var(--line);color:var(--ink)}.doc-link:nth-child(odd){border-right:1px solid var(--line)}.doc-link:nth-last-child(-n+2){border-bottom:0}.doc-link:hover{background:#edf4e9}.doc-link code{display:block;color:var(--teal);font-size:12px;line-height:1.6;margin-bottom:4px}.doc-link span{font-size:12px;color:var(--muted)}.doc-link .arrow{margin-left:auto;font-size:21px;color:var(--teal);flex-shrink:0}.source-box{margin-top:24px;border:1px dashed #bdd0bf;border-radius:14px;padding:20px 24px;display:flex;gap:20px;align-items:center}.source-box b{font-size:12px;white-space:nowrap}.source-box p{font-size:12px;color:var(--muted)}.source-box code{font-size:11px}.footer{padding:32px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;font-size:12px;color:var(--muted)}.footer a{font-size:12px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(min-width:1500px){.hero{padding-top:86px;padding-bottom:56px}}
+    @media(max-width:1000px){.top-nav{gap:16px}.hero{gap:28px}.hero-art{min-height:335px}.hero-art svg{height:335px}.architecture{grid-template-columns:1fr}.architecture-aside{display:grid;grid-template-columns:1fr 1.4fr;gap:16px}.architecture-aside hr{display:none}.architecture-aside a{align-self:end}.module-grid{grid-template-columns:repeat(2,1fr)}.layer{grid-template-columns:120px 1fr}.flow-label{padding-left:167px}.start-grid{grid-template-columns:.8fr 1.2fr}.terminal pre{font-size:12px;padding:23px}.boundaries{gap:12px}.boundary{padding:21px}}
+    @media(max-width:760px){.wrap{width:calc(100% - 36px)}.top-inner{min-height:70px;gap:14px}.brand-name{font-size:18px}.brand small{font-size:9px}.brand-mark{width:36px;height:36px;font-size:18px}.top-nav{gap:15px;overflow-x:auto}.top-nav a{font-size:12px}.top-nav a:nth-child(2),.top-nav a:nth-child(3){display:none}.version{display:none}.hero{grid-template-columns:1fr;padding:42px 0 30px;gap:30px}.hero h1{font-size:clamp(2.2rem,8.4vw,3rem)}.hero-description{font-size:15px}.hero-art{min-height:310px}.hero-art svg{height:310px}.feature-strip{grid-template-columns:1fr 1fr;gap:18px 0;margin-bottom:50px}.strip-item{padding:0 18px}.strip-item:nth-child(2){border-right:0}.strip-item:nth-child(3){padding-left:0}.strip-item b{font-size:12px}.strip-item span{font-size:11px}section{margin-bottom:52px}.section-heading{display:block}.section-heading>p{margin-top:14px;max-width:none;font-size:13px}.role-bar{gap:4px;padding:8px}.role-tab{font-size:12px;padding:6px;min-height:44px}.role-content{padding:24px}.role-intro{display:block}.role-intro h3{font-size:21px}.role-intro>a{display:inline-block;margin-top:12px}.steps{grid-template-columns:1fr;gap:22px}.step .num{margin-bottom:6px}.step p{font-size:13px}.step a{margin-top:6px}.layer{grid-template-columns:1fr;gap:15px;padding:20px}.layer-label{display:flex;gap:12px;align-items:center}.layer-label b{margin:0}.node{font-size:13px;min-width:120px}.flow-label{padding-left:20px;font-size:10px}.architecture-aside{display:block}.architecture-aside h3{margin:8px 0 12px}.architecture-aside p{margin-bottom:14px}.architecture-aside a{display:block;margin-top:12px}.workflow{display:grid;grid-template-columns:1fr 1fr;gap:24px 10px}.workflow-item:last-child{grid-column:1/-1}.module-grid{grid-template-columns:1fr}.module-card{min-height:0;padding:22px}.modules-toolbar{gap:10px}.search-count{font-size:11px}.search-box input{font-size:13px}.start-grid{grid-template-columns:1fr}.requirements li{font-size:12px}.terminal pre{font-size:12px}.boundaries{grid-template-columns:1fr;gap:18px}.boundary{padding:24px}.limit-list{grid-template-columns:1fr}.docs-grid{grid-template-columns:1fr}.doc-link:nth-child(odd){border-right:0}.doc-link:nth-last-child(2){border-bottom:1px solid var(--line)}.source-box{display:block;padding:20px}.source-box p{margin-top:9px}.footer{display:block;padding-bottom:36px}.footer>div+div{margin-top:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+    @media print{.topbar{position:static}.top-nav,.hero-links,.modules-toolbar,.copy-button,.terminal-tabs,.footer a{display:none}.wrap{width:100%}.hero{padding-top:25px}.hero-art{min-height:260px}.hero-art svg{height:260px}section{break-inside:avoid;margin-bottom:32px}.role-content[hidden]{display:block!important}.role-bar{display:none}.role-content{border-bottom:1px solid var(--line)}.module-card[hidden]{display:flex!important}body{font-size:12px;background:white}.module-grid{grid-template-columns:repeat(3,1fr)}.module-card{padding:18px}.architecture-aside,.terminal{-webkit-print-color-adjust:exact;print-color-adjust:exact}a{color:var(--ink)}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳至项目内容</a>
+  <header class="topbar">
+    <div class="wrap top-inner">
+      <a class="brand" href="#top" aria-label="题景开源导览首页"><span class="brand-mark" aria-hidden="true">景</span><span class="brand-name">题景<small>OPEN SOURCE GUIDE</small></span></a>
+      <nav class="top-nav" aria-label="导览章节"><a href="#paths">开始阅读</a><a href="#architecture">项目架构</a><a href="#modules">代码地图</a><a href="#docs">文档索引</a></nav>
+      <span class="version">v0.7.0</span>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="hero" id="top">
+      <div>
+        <div class="eyebrow">Physics, made explorable.</div>
+        <h1>把一道题，变成<br>可探索的<em>物理现场。</em></h1>
+        <p class="hero-description">从题目资源到交互沙盒，从教师备课到班组分享。题景是一套可自行部署、可持续扩展的物理教学全栈项目。</p>
+        <div class="hero-links"><a class="button" href="#paths">选择我的阅读路径 <span aria-hidden="true">↗</span></a><a class="button secondary" href="../../README.md">阅读 README <span aria-hidden="true">→</span></a></div>
+        <p class="hero-note">本页可离线打开 · 原生 HTML / CSS / SVG · 无外部字体与网络资源</p>
+      </div>
+      <div class="hero-art">
+        <div class="art-grid" aria-hidden="true"></div>
+        <svg viewBox="0 0 500 380" role="img" aria-labelledby="scene-title scene-desc">
+          <title id="scene-title">题目、物理场景与课堂的关系示意</title><desc id="scene-desc">原创示意图：题目条件进入物理场景，粒子轨迹与参数观察连接到班组教学。图示不代表实际运行结果。</desc>
+          <defs><marker id="a" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#91b3a0" stroke-width="1.5"/></marker><linearGradient id="card" x2="1" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#f0f7eb"/></linearGradient></defs>
+          <path d="M101 113H264Q342 113 342 177V263" fill="none" stroke="#91b3a0" stroke-width="1.3" stroke-dasharray="4 6" marker-end="url(#a)"/>
+          <g transform="translate(118 68) rotate(-5 125 115)"><rect width="265" height="238" rx="19" fill="#456d5520" x="5" y="8"/><rect width="265" height="238" rx="19" fill="url(#card)" stroke="#b9d1bd"/><path d="M27 193H240M47 214V43" stroke="#b4c9b7" stroke-width="1.2"/><path d="M48 185C59 138 76 91 130 86C189 80 212 135 183 169C155 201 113 167 134 137" fill="none" stroke="#13816b" stroke-width="3.4" stroke-linecap="round"/><path d="m132 139 6-11 5 12" fill="none" stroke="#13816b" stroke-width="2.5"/><circle cx="47" cy="185" r="5.5" fill="#bd8744"/><circle cx="134" cy="137" r="5.5" fill="#13816b" stroke="#fffefa" stroke-width="2"/><g fill="#9cbda6" font-family="Consolas,monospace" font-size="19"><text x="80" y="63">×</text><text x="133" y="63">×</text><text x="186" y="63">×</text><text x="80" y="116">×</text><text x="186" y="116">×</text><text x="80" y="169">×</text><text x="221" y="169">×</text></g><text x="212" y="218" font-family="Consolas,monospace" font-size="13" fill="#6a8b75">x</text><text x="30" y="46" font-family="Consolas,monospace" font-size="13" fill="#6a8b75">y</text></g>
+          <g transform="translate(25 42)"><rect width="146" height="72" rx="13" fill="#fffefa" stroke="#c0d5c5"/><rect x="15" y="16" width="25" height="32" rx="4" fill="#e6eddd"/><path d="M21 25H33M21 31H33M21 37H29" stroke="#5f8164" stroke-width="1.5"/><text x="52" y="31" font-family="Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#21483c">从题目出发</text><text x="52" y="49" font-family="Microsoft YaHei,sans-serif" font-size="10" fill="#68806d">条件 · 图像 · 参数</text></g>
+          <g transform="translate(309 256)"><rect width="160" height="74" rx="13" fill="#164e43"/><circle cx="26" cy="30" r="6" fill="none" stroke="#c5e8ce" stroke-width="1.5"/><path d="M15 49q0-14 11-14t11 14" fill="none" stroke="#c5e8ce" stroke-width="1.5"/><text x="49" y="31" font-family="Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#f3f8ed">在课堂中探索</text><text x="49" y="50" font-family="Microsoft YaHei,sans-serif" font-size="10" fill="#bddcc9">观察 · 调参 · 讨论</text></g>
+          <g transform="translate(37 242)"><rect width="116" height="42" rx="21" fill="#f3e8d1" stroke="#dfc89c"/><text x="58" y="26" text-anchor="middle" font-family="Consolas,monospace" font-size="13" fill="#785d2c">r = mv / qB</text></g>
+        </svg>
+        <div class="art-caption">概念示意 / 非运行截图</div>
+      </div>
+    </div>
+
+    <div class="feature-strip" aria-label="项目要点"><div class="strip-item"><b>原生物理沙盒</b><span>几何关系、场与运动计算</span></div><div class="strip-item"><b>教师与学生空间</b><span>班级、小组与教学分享</span></div><div class="strip-item"><b>AI 辅助建模</b><span>原生校验后确认候选</span></div><div class="strip-item"><b>可自行部署</b><span>Node.js 24 + SQLite</span></div></div>
+
+    <section id="paths" aria-labelledby="paths-title">
+      <div class="section-heading"><div><div class="eyebrow">01 / Choose your path</div><h2 id="paths-title">从你的角色开始</h2></div><p>先找到自己的入口，再深入代码。不同角色共享同一套项目事实与使用边界。</p></div>
+      <div class="role-panel">
+        <div class="role-bar" role="tablist" aria-label="选择阅读角色"><button class="role-tab" id="tab-teacher" role="tab" aria-selected="true" aria-controls="panel-teacher" tabindex="0">我是教师 / 使用者</button><button class="role-tab" id="tab-developer" role="tab" aria-selected="false" aria-controls="panel-developer" tabindex="-1">我是开发者</button><button class="role-tab" id="tab-agent" role="tab" aria-selected="false" aria-controls="panel-agent" tabindex="-1">交给 Agent 阅读</button></div>
+        <div class="role-content" id="panel-teacher" role="tabpanel" aria-labelledby="tab-teacher" tabindex="0">
+          <div class="role-intro"><div><h3>让学生看见物理关系如何发生。</h3><p>从原创入门样例熟悉操作，再把题目条件转成可调节、可观察、可分享的场景。</p></div><a href="../USER_GUIDE.md">打开教师使用说明 →</a></div>
+          <div class="steps"><div class="step"><span class="num">STEP 01</span><h4>启动并进入教学空间</h4><p>本机安装后完成初始化；教师可自助注册独立空间，组织自己的班级与学习小组。</p><a href="#quickstart">查看启动步骤</a></div><div class="step"><span class="num">STEP 02</span><h4>导入、校对、构造场景</h4><p>核实题目文字、图像和条件，再用原生编辑器构造场景。AI 候选仍需教师确认。</p><a href="#architecture">理解教学工作流</a></div><div class="step"><span class="num">STEP 03</span><h4>保存、发布与课堂观察</h4><p>保存后向班组发布场景快照，或使用离线导出。通过调参观察轨迹与物理量的变化。</p><a href="../USER_GUIDE.md">阅读完整操作说明</a></div></div>
+        </div>
+        <div class="role-content" id="panel-developer" role="tabpanel" aria-labelledby="tab-developer" tabindex="0" hidden>
+          <div class="role-intro"><div><h3>先看宿主，再沿边界进入沙盒。</h3><p>原生 JavaScript 前端、Node.js HTTP 服务和 SQLite 组成 Web 主线；编辑器通过 iframe 与 bridge 通信。</p></div><a href="../DEVELOPMENT.md">打开开发指南 →</a></div>
+          <div class="steps"><div class="step"><span class="num">STEP 01</span><h4>认清版本与运行入口</h4><p>先读 README、版本来源与 package.json。Web 为默认构建主线，历史教学资产与脚本保留为可选内容。</p><a href="../../package.json">打开 package.json</a></div><div class="step"><span class="num">STEP 02</span><h4>按职责定位修改范围</h4><p>页面从 src/exam 进入；HTTP 与存储从 server/exam 进入；物理计算从 planar 模块进入。</p><a href="#modules">查找对应代码模块</a></div><div class="step"><span class="num">STEP 03</span><h4>保留数据与协议边界</h4><p>先理解账号隔离、发布快照和编辑器消息协议。部署时为实例单独配置数据目录与密钥。</p><a href="../ARCHITECTURE.md">阅读架构说明</a></div></div>
+        </div>
+        <div class="role-content" id="panel-agent" role="tabpanel" aria-labelledby="tab-agent" tabindex="0" hidden>
+          <div class="role-intro"><div><h3>小范围建立上下文，沿真实入口追踪。</h3><p>先读取仓库协作约定和文档地图，再打开具体调用链；把原生沙盒与账号业务分开理解。</p></div><a href="../../AGENTS.md">打开 Agent 协作入口 →</a></div>
+          <div class="steps"><div class="step"><span class="num">READ 01</span><h4>AGENTS → README → FILE_MAP</h4><p>确认仓库规则、项目范围、运行方式和目录职责。源版本与本地开源整理应分别记录。</p><a href="../FILE_MAP.md">打开文件导航</a></div><div class="step"><span class="num">READ 02</span><h4>按任务选择最短调用链</h4><p>界面任务追宿主与样式；账号任务追 HTTP 路由与存储；物理任务追原生计算及 bridge。</p><a href="#modules">按关键词筛选模块</a></div><div class="step"><span class="num">READ 03</span><h4>用事实约束修改与交付</h4><p>不推断题目条件，不把模型文本当作计算证据；不读取或打包真实账号、数据库、密钥和上传附件。</p><a href="#boundaries">查看数据与功能边界</a></div></div>
+        </div>
+      </div>
+      <noscript><p class="caption">当前浏览器未启用 JavaScript。角色切换、搜索与复制不可用；请使用下方文档索引打开开发指南或 Agent 协作入口。</p></noscript>
+    </section>
+
+    <section id="architecture" aria-labelledby="architecture-title">
+      <div class="section-heading"><div><div class="eyebrow">02 / System at a glance</div><h2 id="architecture-title">一条教学主线，清晰的全栈分工</h2></div><p>题目与场景由 Web 宿主组织，物理计算交给原生引擎；账号与持久化留在服务端。</p></div>
+      <div class="architecture">
+        <div class="architecture-main">
+          <div class="layer"><div class="layer-label">EXPERIENCE<b>Web 教学宿主</b></div><div class="layer-content"><div class="node teal">题库与资源<small>导入、校对、场景管理</small></div><div class="node teal">师生空间<small>账号、班组、个性化</small></div><div class="node teal">教学发布<small>快照、分享、离线导出</small></div></div></div>
+          <div class="flow-label">src/exam/web-host · app.mjs ↔ editor-client / bridge</div>
+          <div class="layer"><div class="layer-label">SIMULATION<b>iframe 原生编辑器</b></div><div class="layer-content"><div class="node">planar<small>平面物理、几何与运动</small></div><div class="node">example4<small>既有空间场景模块</small></div><div class="node">supplement<small>补充实验与教学模块</small></div></div></div>
+          <div class="flow-label">前端通过 HTTP API 访问服务；编辑器通信与业务 API 各有边界</div>
+          <div class="layer"><div class="layer-label">PERSISTENCE<b>Node.js 服务端</b></div><div class="layer-content"><div class="node sand">HTTP 路由<small>认证、资源、班组、AI</small></div><div class="node sand">SQLite<small>业务记录与权限关系</small></div><div class="node sand">持久附件<small>实例数据目录独立保存</small></div></div></div>
+        </div>
+        <aside class="architecture-aside"><div><div class="aside-label">ASSISTED, THEN VERIFIED</div><h3>AI 是辅助入口</h3></div><p>通过兼容 HTTPS 的模型接口生成候选，接入原生工具进行校验，再由用户确认。自动建模目前仅覆盖原生平面场景。</p><hr><a href="../ARCHITECTURE.md">查看详细架构与边界 →</a></aside>
+      </div>
+      <div class="workflow" aria-label="教学工作流"><div class="workflow-item"><b>01 资源导入与校对</b><small>确认真实题目条件</small></div><div class="workflow-item"><b>02 场景构造</b><small>手工编辑 / AI 候选</small></div><div class="workflow-item"><b>03 原生计算</b><small>物理量、轨迹与关系</small></div><div class="workflow-item"><b>04 保存场景</b><small>保留可继续编辑的结果</small></div><div class="workflow-item"><b>05 教学分享</b><small>班组快照 / 离线导出</small></div></div>
+      <p class="caption">架构图按职责抽象，具体路由、协议与存储行为以仓库源文件和架构文档为准。</p>
+    </section>
+
+    <section id="modules" aria-labelledby="modules-title">
+      <div class="section-heading"><div><div class="eyebrow">03 / Find the right file</div><h2 id="modules-title">代码地图：从问题找到入口</h2></div><p>搜索功能、路径或关键词。链接直接指向本地仓库文件，目录型入口可继续按文件导航阅读。</p></div>
+      <div class="modules-toolbar"><div class="search-wrap"><label class="search-label" for="module-search">模块搜索</label><div class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="module-search" type="search" placeholder="如：账号、物理、AI、构建、server…" autocomplete="off" spellcheck="false" aria-controls="module-grid"></div></div><div class="search-count" id="search-count" role="status" aria-live="polite">显示 9 个模块</div></div>
+      <div class="module-grid" id="module-grid">
+        <article class="module-card" data-search="web-host 前端 页面 布局 宿主 UI app"><span class="module-tag">01 / WEB HOST</span><h3>Web 宿主与页面组织</h3><p>资源区、账号界面与沙盒容器的组合入口。先理解宿主，再定位具体界面模块。</p><a href="../../src/exam/app.mjs"><code>src/exam/app.mjs →</code></a></article>
+        <article class="module-card" data-search="editor-client bridge iframe 协议 编辑器 通信"><span class="module-tag">02 / EDITOR BOUNDARY</span><h3>编辑器与通信桥</h3><p>连接宿主页面和 iframe 沙盒。修改工具动作或状态同步时，先读消息协议与边界。</p><a href="../../src/exam/editor-client.mjs"><code>src/exam/editor-client.mjs →</code></a></article>
+        <article class="module-card" data-search="planar 物理 平面 几何 粒子 轨迹 计算 沙盒"><span class="module-tag">03 / NATIVE PHYSICS</span><h3>原生平面物理引擎</h3><p>场景模型、几何关系、物理计算和运动观察。保留符号参数及持续依赖的真实含义。</p><a href="../../src/planar-app.mjs"><code>src/planar-app.mjs →</code></a></article>
+        <article class="module-card" data-search="server HTTP 后端 接口 路由 账号 教师 学生 班级 小组 权限"><span class="module-tag">04 / SERVER</span><h3>账号、班组与业务 API</h3><p>Node.js 内置 HTTP 服务。认证、角色权限、班组及资源操作从服务端路由继续追踪。</p><a href="../../server/exam/http.mjs"><code>server/exam/http.mjs →</code></a></article>
+        <article class="module-card" data-search="SQLite 数据库 附件 持久化 启动 main 存储"><span class="module-tag">05 / RUNTIME</span><h3>服务启动与持久化</h3><p>沿启动入口查找运行配置、SQLite 与附件目录。实例数据不应随源码一起再分发。</p><a href="../../server/exam/main.mjs"><code>server/exam/main.mjs →</code></a></article>
+        <article class="module-card" data-search="AI 大模型 API HTTPS 校验 候选 自动建模"><span class="module-tag">06 / AI WORKFLOW</span><h3>AI 辅助与原生确认</h3><p>模型接口、候选构造与工具校验分工协作。具体实现由文件地图定位，自动建模限定平面场景。</p><a href="../FILE_MAP.md"><code>docs/FILE_MAP.md →</code></a></article>
+        <article class="module-card" data-search="build 构建 scripts 打包 npm web 发布"><span class="module-tag">07 / BUILD</span><h3>Web 构建与打包</h3><p>从 Web 构建脚本理解产物组成。默认主线包含原创入门样例，legacy 资产与脚本可按需使用。</p><a href="../../scripts/build-exam-web.mjs"><code>scripts/build-exam-web.mjs →</code></a></article>
+        <article class="module-card" data-search="env 配置 环境 密钥 微信 注册 setup 初始化 部署"><span class="module-tag">08 / CONFIGURATION</span><h3>初始化与环境配置</h3><p>从示例配置创建本地 .env，再运行 setup。微信默认关闭，官方应用与凭据齐备后再启用。</p><a href="../../server/exam/.env.example"><code>server/exam/.env.example →</code></a></article>
+        <article class="module-card" data-search="example4 supplement legacy 历史 教学 扩展 实验 材料 版权 授权"><span class="module-tag">09 / TEACHING ASSETS</span><h3>教学材料与历史模块</h3><p>保留授权教学材料与可选历史入口。使用与再分发前，应区分代码许可和材料署名说明。</p><a href="../../ASSET_LICENSES.md"><code>ASSET_LICENSES.md →</code></a></article>
+      </div>
+      <div id="search-empty" class="empty" hidden>没有匹配的模块。试试“账号”“物理”或“构建”。<button id="clear-search" type="button">清空搜索</button></div>
+    </section>
+
+    <section id="quickstart" aria-labelledby="quickstart-title">
+      <div class="section-heading"><div><div class="eyebrow">04 / Run it locally</div><h2 id="quickstart-title">先让自己的实例运行起来</h2></div><p>在项目根目录运行。完整环境变量、持久化和公开部署说明见部署文档。</p></div>
+      <div class="start-grid">
+        <div class="start-copy"><span class="section-number">LOCAL FIRST</span><h3>一套代码，<br>自己的教学空间。</h3><p>先构建 Web 与原创入门样例，再配置环境、初始化账号并启动服务。</p><ul class="requirements"><li><span>Node.js</span><b>24.14 ≤ 版本 &lt; 25</b></li><li><span>依赖安装</span><b>npm ci</b></li><li><span>默认访问地址</span><b>localhost:8080</b></li><li><span>详细说明</span><b><a href="../DEPLOYMENT.md">DEPLOYMENT.md →</a></b></li></ul></div>
+        <div><div class="terminal"><div class="terminal-bar"><div class="terminal-tabs" aria-label="选择终端命令"><button type="button" id="shell-windows" aria-pressed="true">PowerShell</button><button type="button" id="shell-unix" aria-pressed="false">macOS / Linux</button></div><button class="copy-button" id="copy-command" type="button">复制命令</button></div><pre id="command-block" tabindex="0"><code id="command-text">npm ci
+npm run build:web
+Copy-Item server/exam/.env.example .env
+# 按部署文档编辑 .env，再继续
+npm run setup:web
+npm start</code></pre><p class="terminal-note">启动后访问 <code>http://localhost:8080</code>。<br>初始化与配置要求以 <a href="../DEPLOYMENT.md">部署指南</a> 为准。</p></div><div id="copy-status" class="copy-status" role="status" aria-live="polite">本地文件模式若无法自动复制，可直接选中命令文本。</div></div>
+      </div>
+    </section>
+
+    <section id="boundaries" aria-labelledby="boundaries-title">
+      <div class="section-heading"><div><div class="eyebrow">05 / Know the boundaries</div><h2 id="boundaries-title">分享源码，也把边界说明白</h2></div><p>复用项目时，区分可公开的代码、实例私有的数据，以及需要单独配置的外部服务。</p></div>
+      <div class="boundaries"><article class="boundary"><h3>代码与教学材料</h3><p>项目代码采用 MIT 许可证。教学材料与第三方依赖应按各自的授权或许可说明使用。</p><ul><li>教材与历史教学材料已由提供者确认可再分发。</li><li>材料的详细来源、署名与授权信息仍待补充。</li><li>阅读 <a href="../../LICENSE">LICENSE</a> 与 <a href="../../ASSET_LICENSES.md">ASSET_LICENSES.md</a>，不要把所有素材视为 MIT。</li></ul></article><article class="boundary"><h3>实例数据与账号</h3><p>公开仓库与个人部署实例应分开。账号、班组关系和附件属于实际使用产生的数据。</p><ul><li>真实数据库、会话、账号资料与上传附件不随源码发布。</li><li>头像、背景、简介和兴趣标签由用户在实例内维护。</li><li>备份与迁移须同时考虑 SQLite 和持久附件。</li></ul></article><article class="boundary"><h3>密钥与外部服务</h3><p>模型 API 和微信开放平台均需部署者自行配置，示例配置不能替代真实凭据。</p><ul><li>API Key、AppSecret 和服务器凭据留在实例配置中。</li><li>教师独立管理教学 API，访问控制由服务端执行。</li><li>公开部署前阅读 <a href="../DEPLOYMENT.md">部署指南</a> 中的环境与运行要求。</li></ul></article></div>
+      <div class="limit-list"><details><summary>微信扫码现在是否可以直接使用？</summary><p>接入代码已经预留，但默认关闭。正式启用需要微信开放平台审核通过的网站应用、可配置回调的域名及正确凭据。仅复制项目或部署到 IP 地址，不等于已具备微信扫码注册条件。</p></details><details><summary>AI 能为所有沙盒自动建模吗？</summary><p>目前自动建模只覆盖原生平面场景。AI 输出作为候选，仍需经过原生工具校验和用户确认。其他既有沙盒模块不应被描述为已支持同等的自动建模能力。</p></details><details><summary>教师、学生与班组是什么关系？</summary><p>教师可自助注册独立教学空间，管理自己的班级、小组与教学 API。学生采用单行政班、多学习小组的关系。平台管理员负责平台级管理，具体授权规则以服务端实现为准。</p></details><details><summary>离线导览、离线导出与完整系统有何区别？</summary><p>本页是无需服务端的离线文档。场景离线导出用于携带教学内容。完整的账号、班组、持久化与 AI 服务仍需运行 Node.js 服务端；AI 调用还需要可用的外部模型接口。</p></details></div>
+    </section>
+
+    <section id="docs" aria-labelledby="docs-title">
+      <div class="section-heading"><div><div class="eyebrow">06 / Continue exploring</div><h2 id="docs-title">需要细节时，沿文档继续</h2></div><p>本页负责快速建立全貌；操作步骤、接口边界与开发约定由对应文档承接。</p></div>
+      <div class="docs-grid"><a class="doc-link" href="../../README.md"><div><code>README.md</code><span>项目概述、版本来源、安装与主要入口</span></div><span class="arrow" aria-hidden="true">↗</span></a><a class="doc-link" href="../../AGENTS.md"><div><code>AGENTS.md</code><span>Agent 阅读顺序、修改边界与协作约定</span></div><span class="arrow" aria-hidden="true">↗</span></a><a class="doc-link" href="../USER_GUIDE.md"><div><code>docs/USER_GUIDE.md</code><span>教师与学生的日常使用路径</span></div><span class="arrow" aria-hidden="true">↗</span></a><a class="doc-link" href="../DEPLOYMENT.md"><div><code>docs/DEPLOYMENT.md</code><span>环境配置、初始化、启动与持久化</span></div><span class="arrow" aria-hidden="true">↗</span></a><a class="doc-link" href="../ARCHITECTURE.md"><div><code>docs/ARCHITECTURE.md</code><span>前后端、编辑器与 AI 工作流的职责</span></div><span class="arrow" aria-hidden="true">↗</span></a><a class="doc-link" href="../DEVELOPMENT.md"><div><code>docs/DEVELOPMENT.md</code><span>构建、修改方式与开发注意事项</span></div><span class="arrow" aria-hidden="true">↗</span></a><a class="doc-link" href="../FILE_MAP.md"><div><code>docs/FILE_MAP.md</code><span>任务到目录与源文件的定位索引</span></div><span class="arrow" aria-hidden="true">↗</span></a><a class="doc-link" href="../../ASSET_LICENSES.md"><div><code>ASSET_LICENSES.md</code><span>代码之外的素材来源与授权边界</span></div><span class="arrow" aria-hidden="true">↗</span></a></div>
+      <div class="source-box"><b>本包的源码起点</b><p>服务器发布版本 <strong>v0.7.0</strong> · 源提交 <code>e98b3f2395d91f90a224235ff840998cb13e8f1b</code><br>本地开源整理包含文档、示例与打包配置；版本追溯及具体整理内容请阅读 README。本页不包含生产账号截图或用户数据。</p></div>
+    </section>
+    <footer class="footer"><div><strong>题景</strong> · 让物理关系可见，让教学经验可共享。<br>代码 MIT；教学材料与依赖遵循各自许可说明。</div><div><a href="../overview.svg">查看项目概览图</a> <span aria-hidden="true"> · </span> <a href="#top">回到顶部 ↑</a></div></footer>
+  </main>
+  <script>
+    (() => {
+      // 原生 DOM 交互让导览可直接以 file:// 打开，无构建或网络依赖。
+      const tabs = [...document.querySelectorAll('.role-tab')];
+      function activateTab(tab, moveFocus = false) {
+        tabs.forEach(item => {
+          const selected = item === tab;
+          item.setAttribute('aria-selected', String(selected));
+          item.tabIndex = selected ? 0 : -1;
+          document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+        });
+        if (moveFocus) tab.focus();
+      }
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activateTab(tab));
+        tab.addEventListener('keydown', event => {
+          let next;
+          if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+          if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+          if (event.key === 'Home') next = 0;
+          if (event.key === 'End') next = tabs.length - 1;
+          if (next !== undefined) { event.preventDefault(); activateTab(tabs[next], true); }
+        });
+      });
+
+      const search = document.getElementById('module-search');
+      const modules = [...document.querySelectorAll('.module-card')];
+      const count = document.getElementById('search-count');
+      function filterModules() {
+        const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+        let visible = 0;
+        modules.forEach(card => {
+          const haystack = `${card.dataset.search} ${card.textContent}`.toLocaleLowerCase();
+          card.hidden = !terms.every(term => haystack.includes(term));
+          if (!card.hidden) visible++;
+        });
+        count.textContent = `显示 ${visible} / ${modules.length} 个模块`;
+        document.getElementById('search-empty').hidden = visible > 0;
+      }
+      search.addEventListener('input', filterModules);
+      document.getElementById('clear-search').addEventListener('click', () => { search.value = ''; filterModules(); search.focus(); });
+
+      const windowsButton = document.getElementById('shell-windows');
+      const unixButton = document.getElementById('shell-unix');
+      const commandText = document.getElementById('command-text');
+      const copyStatus = document.getElementById('copy-status');
+      function setShell(isWindows) {
+        windowsButton.setAttribute('aria-pressed', String(isWindows));
+        unixButton.setAttribute('aria-pressed', String(!isWindows));
+        commandText.textContent = ['npm ci', 'npm run build:web', isWindows ? 'Copy-Item server/exam/.env.example .env' : 'cp server/exam/.env.example .env', '# 按部署文档编辑 .env，再继续', 'npm run setup:web', 'npm start'].join('\n');
+        copyStatus.textContent = isWindows ? '已选择 PowerShell 命令。' : '已选择 macOS / Linux 命令。';
+      }
+      windowsButton.addEventListener('click', () => setShell(true));
+      unixButton.addEventListener('click', () => setShell(false));
+      document.getElementById('copy-command').addEventListener('click', async () => {
+        try {
+          if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+          await navigator.clipboard.writeText(commandText.textContent);
+          copyStatus.textContent = '命令已复制。请先编辑 .env，再执行初始化与启动。';
+        } catch {
+          const selection = window.getSelection();
+          const range = document.createRange();
+          range.selectNodeContents(commandText);
+          selection.removeAllRanges();
+          selection.addRange(range);
+          copyStatus.textContent = '浏览器限制自动复制，已选中命令；请按 Ctrl+C（Mac 为 ⌘C）复制。';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

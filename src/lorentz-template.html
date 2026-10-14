@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>洛伦兹力实验室 · 课堂演示</title><style>/* MATH_STYLE */</style><style>/* INLINE_STYLE */</style></head>
+<body>
+ <header class="topbar">
+  <div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="12" ry="7" transform="rotate(-38 16 16)"/><circle cx="25" cy="10" r="3"/><path d="M16 5v22M12 9l4-4 4 4"/></svg><span>洛伦兹力<span class="brand-sub">实验室</span></span></div>
+  <nav id="modules" aria-label="教学入口"></nav>
+  <div class="top-actions"><button id="save" title="保存备课配置">保存</button><button id="load" title="载入备课配置">载入</button><button id="help" title="课堂用法与物理模型">说明</button><button id="fullscreen" title="全屏演示">全屏</button></div>
+ </header>
+ <main id="workspace">
+  <section id="stage" aria-label="仿真与可视化窗口">
+   <div id="viewport"><div id="labels"></div></div>
+   <div class="stage-heading"><div class="eyebrow" id="scene-tag"></div><h1 id="scene-title"></h1><p id="scene-subtitle"></p></div>
+   <div class="view-tools"><select id="view" aria-label="观察视图"><option value="space">空间视图</option><option value="plane">正视 · xy 平面</option><option value="xz">侧视 · xz 平面</option><option value="yz">沿 x 轴 · yz 平面</option><option value="field">沿磁场 · 圆周投影</option></select><button id="projection" title="切换正交与透视投影">正交</button><button id="fit" title="将完整场景收入画面">适配</button><button id="panel-toggle" title="展开或收起参数">参数 ›</button></div>
+   <div class="layer-tools" id="layers"></div><div id="quick-tools" class="quick-tools" hidden></div>
+   <div id="touch-tools" class="touch-tools" role="group" aria-label="触屏视角操作">
+    <div class="touch-tools-head"><span>视角操作<small id="drag-hint">单指平移 · 双指缩放</small></span><button id="touch-toggle" aria-controls="touch-tools-body" aria-expanded="true">收起</button></div>
+    <div id="touch-tools-body">
+     <div class="touch-modes"><button data-drag-mode="pan" aria-pressed="true">↔ 平移</button><button data-drag-mode="rotate" aria-pressed="false">⟳ 旋转</button></div>
+     <div class="touch-pan" role="group" aria-label="移动画面"><button data-pan="-1,0" aria-label="画面向左移动" title="画面向左移动">←</button><button data-pan="0,1" aria-label="画面向上移动" title="画面向上移动">↑</button><button data-pan="0,-1" aria-label="画面向下移动" title="画面向下移动">↓</button><button data-pan="1,0" aria-label="画面向右移动" title="画面向右移动">→</button></div>
+     <div class="touch-zoom"><button data-zoom="0.8" aria-label="缩小画面">− 缩小</button><button data-zoom="1.25" aria-label="放大画面">＋ 放大</button><button id="camera-reset" title="恢复当前视图并显示完整场景">复位</button></div>
+    </div>
+   </div>
+   <div class="legend"><span class="v">速度</span><span class="b">磁场</span><span class="f">磁力</span><span class="track">轨迹</span><span class="geo">辅助</span></div>
+   <div id="hand-card" class="floating-card" hidden></div>
+   <div id="metrics" class="metrics"></div>
+   <div id="screen-card" class="screen-card" hidden><div class="screen-head"><button id="screen-toggle" class="screen-title">荧光屏 · 预计落点 <span>↗</span></button><button id="screen-collapse" title="展开或收起屏幕">▾</button></div><div id="screen-inner"><svg id="screen-svg" viewBox="0 0 220 220" role="img" aria-label="电子束在荧光屏上的落点"></svg><div id="screen-readout"></div></div></div>
+   <div id="view-caption" class="view-caption"></div>
+  </section>
+  <aside id="panel"><div class="panel-head"><div><span class="eyebrow">EXPERIMENT</span><h2>实验参数</h2></div><button id="reset-preset" title="恢复当前入口的初始实验">重置参数</button></div><div id="parameters"></div><div class="panel-foot">修改参数后重新发射 · 视角与辅助线可随时调整</div></aside>
+ </main>
+ <footer class="transport"><div class="play-group"><button id="reset-time" title="回到发射时刻">↺</button><button id="play" class="primary">播放</button><button id="step" title="向前单步">单步</button><button id="event-time" title="跳到下一个入场、离场或观察终点">关键时刻</button></div><div class="timeline"><input id="time-slider" type="range" min="0" max="1000" step="1" value="0" aria-label="播放时间"><div id="time-readout"></div></div><label class="rate-label">速度<select id="rate" aria-label="播放速度"><option value=".25">0.25×</option><option value=".5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><button id="pin" title="保留当前完整轨迹作对照">保留对照</button><button id="clear-pin" hidden>清除对照</button></footer>
+ <input type="file" id="config-file" accept=".json,application/json" hidden>
+ <div id="toast" role="status"></div>
+ <dialog id="help-dialog"><button class="dialog-close" id="close-help" aria-label="关闭说明">×</button><div id="help-content"></div></dialog>
+ <script>/* INLINE_APP */</script>
+ <!-- LIBRARY_LICENSES -->
+</body></html>
